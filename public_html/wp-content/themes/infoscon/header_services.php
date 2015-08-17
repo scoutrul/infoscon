@@ -19,7 +19,7 @@
 							необходимо для интернет- и контент-провайдеров, а также 
 							компаниям спутникового мониторинга.</p>
 							<div class="price">7 999</div>
-							<a class="readmore" href="/телематические-услуги-связи/">Узнать подробности</a>
+							<a class="readmore" href="/телематические-услуги-связи/">Подробнее</a>
 						</div>
 
 						<div class="text service2" data-image="<?php bloginfo('template_url'); ?>/images/header_02.jpg">
@@ -31,30 +31,36 @@
 							необходимо для интернет- и контент-провайдеров, а также 
 							компаниям спутникового мониторинга.</p>
 							<div class="price">3 999</div>
-							<a class="readmore">Узнать подробности</a>
+							<a class="readmore">Подробнее</a>
 						</div>
 
 						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/header_03.jpg">
 							<div class="header">Разрешения на эфирные частоты, радио- и тв-трансляции по России.</div>
 							<p>Радио и тв-частоты по всей России!</p>
 							<div class="price">12 444</div>
-							<a class="readmore">Узнать подробности</a>
+							<a class="readmore">Подробнее</a>
 						</div>
 
 						<div class="text service4"  data-image="<?php bloginfo('template_url'); ?>/images/header_04.jpg">
 							<div class="header">Телефония</div>
 							<p>Телефония позволяет организовывать (устанавливать соединение) и вести местные, внутризоновые, междугородные и международные телефонные переговоры и передавать факсы, а также устанавливать модемное соединение в режиме реального времени.</p>
 							<div class="price">8 000</div>
-							<a class="readmore">Узнать подробности</a>
+							<a class="readmore">Подробнее</a>
 						</div>
 
 						<div class="text service5" data-image="<?php bloginfo('template_url'); ?>/images/header_05.jpg">
 							<div class="header">Продление лицензий связи</div>
 							<p>На любые услуги связи необходимо продливать лицензию. Вы позабудете о сроках своих лицензий, делегировав нам их сопровождение.</p>
 							<div class="price">7 777</div>
-							<a class="readmore">Узнать подробности</a>
+							<a class="readmore">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="s_bg"></div>
+
+
 			</section>
+
+			<div class="header_padding whois">
+				<div class=" arrow bounce" ></div>
+			</div>
