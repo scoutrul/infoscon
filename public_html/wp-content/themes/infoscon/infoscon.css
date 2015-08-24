@@ -42,10 +42,10 @@
 
 
 	blockquote {
-		border-left: 1px solid #0187ED;
+		border-left: 1px solid rgba(1, 135, 237, 0);
     	padding: 10px 0 10px 40px;
     	
-		margin: 70px 0 90px 30px;
+		margin: 70px 0 90px 0px;
     	font-style: italic;
     	-webkit-transition:.3s;
     	        transition:.3s;
@@ -67,7 +67,7 @@
 	ol{
 		counter-reset: myCounter;
 		margin-top: 40px;
-		padding-left: 30px;
+		padding-left: 0;
 	}
 
 	ol li{
