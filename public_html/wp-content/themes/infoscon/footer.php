@@ -43,11 +43,11 @@
 <?php wp_footer(); ?>
 
 
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
 </body>
 </html>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
 
 
 	<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
@@ -57,16 +57,19 @@
 
 
 
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
 
 	<style>
 			/* /imports */
 
 		@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=cyrillic);
-		@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
 
 
 
 			/* /imports */
 	</style>
+
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>

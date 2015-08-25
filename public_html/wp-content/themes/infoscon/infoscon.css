@@ -179,46 +179,55 @@ ol.index {
 	margin: 50px 0 0 0;
  }
 
-ol.index li {
-    float: left;
-    min-height: 300px;
-    padding: 0 30px;
-    margin: 20px 0px 40px 0;
-    line-height: 180%;
-    -webkit-transition:.16s;
-            transition:.16s;
-    border-bottom: 1px solid #FFF;
-}
 
-ol.index li:after {
-	display:block;
-	height:30px;
-	width:100%;
-	 content:''; 
-	position: absolute;
-	bottom: 0;
-}
+	 ol.index svg {
+	     height: 130px;
+	     width: 70px;
+	     display: block;
+	     margin: auto;
+	 }
 
-ol.index li:hover {
-	border-bottom: 3px solid #FFD800;
-}
+	 
+	ol.index li {
+	    float: left;
+	    min-height: 300px;
+	    padding: 0 30px;
+	    margin: 20px 0px 40px 0;
+	    line-height: 180%;
+	    -webkit-transition:.16s;
+	            transition:.16s;
+	    border-bottom: 1px solid #FFF;
+	}
+
+		ol.index li:after {
+			display:block;
+			height:30px;
+			width:100%;
+			 content:''; 
+			position: absolute;
+			bottom: 0;
+		}
+
+		ol.index li:hover {
+			border-bottom: 3px solid #FFD800;
+		}
 
 
-ol.index li:before {
-	display: none;
-} 
+		ol.index li:before {
+			display: none;
+		} 
 
-ol.index li:hover i {
-	color: #FFD800;
-}
+		ol.index li:hover i {
+			color: #FFD800;
+		}
 
-ol.index li i {
-	display: block;
-	text-align: center;
-	font-size: 70px;
-	margin-bottom: 30px;
-	color: #1D1D1D;
-}
+		ol.index li i {
+			display: block;
+			text-align: center;
+			font-size: 70px;
+			margin-bottom: 30px;
+			color: #1D1D1D;
+		}
 
 header {
 	background-color: #151517;
