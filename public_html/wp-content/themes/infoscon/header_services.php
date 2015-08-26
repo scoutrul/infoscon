@@ -36,8 +36,8 @@
 
 						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/header_03.jpg">
 							<div class="header">Разрешения на эфирные частоты, радио- и тв-трансляции по России.</div>
-							<p>Радио и тв-частоты по всей России!</p>
-							<div class="price">12 444</div>
+							<p>Разрешительные лицензии для целей эфирного радио- и тв-вещания по всей России!</p>
+							<div class="price">11 999</div>
 							<a class="readmore">Подробнее</a>
 						</div>
 

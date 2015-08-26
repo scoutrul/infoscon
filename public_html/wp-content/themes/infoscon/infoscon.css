@@ -30,7 +30,8 @@
 		padding: 0;
 		background: #FFF;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 300;
 		height: 100%;
 		letter-spacing: 0.03em;
 		background-color: #131518;
@@ -177,36 +178,38 @@
 ol.index {
 	padding: 0;
 	margin: 50px 0 0 0;
- }
+ 
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
-	 ol.index svg {
+	 ol.index li svg {
 	     height: 130px;
 	     width: 70px;
 	     display: block;
 	     margin: auto;
 	 }
 
+	 ol.index li:hover svg  {
+		fill: #FFD800;
+	 }
+
 	 
 	ol.index li {
-	    float: left;
-	    min-height: 300px;
+	    display: inline-block;
+	    vertical-align: top;
+	    min-height: 420px;
 	    padding: 0 30px;
 	    margin: 20px 0px 40px 0;
 	    line-height: 180%;
 	    -webkit-transition:.16s;
 	            transition:.16s;
 	    border-bottom: 1px solid #FFF;
-	}
+	
+}
 
-		ol.index li:after {
-			display:block;
-			height:30px;
-			width:100%;
-			 content:''; 
-			position: absolute;
-			bottom: 0;
-		}
+	 
 
 		ol.index li:hover {
 			border-bottom: 3px solid #FFD800;
@@ -221,13 +224,11 @@ ol.index {
 			color: #FFD800;
 		}
 
-		ol.index li i {
-			display: block;
-			text-align: center;
-			font-size: 70px;
-			margin-bottom: 30px;
-			color: #1D1D1D;
-		}
+
+	ol.index li p {
+    padding: 0 0 30px 0;
+		
+	}
 
 header {
 	background-color: #151517;
@@ -795,6 +796,64 @@ section.page {
 .page-services ul li:hover {;
     color: #FDDF00;
 }
+
+/* //page */
+
+
+/* POST SINGLE */
+
+section.post {} 
+
+section.post .post_content {}
+
+section.post .price-text {}
+
+section.post .price {
+    font-size: 200%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    line-height: 160%;
+    margin-top: 60px;
+}
+
+section.post .price-price {
+    font-size: 250%;     
+    font-weight: 600;     
+    margin-left: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+} 
+
+					section.post .price-price:after {
+							content: 'р.';
+							font-size: .3em;
+							margin-left: 5px;
+}
+
+
+					section.post .price-price:before {
+						content:'от ';   
+						font-size: .4em;
+					
+}
+
+/* //POST SINGLE */
 
 
 .service_catalog {
@@ -1883,9 +1942,19 @@ header.mobile {
 		position: absolute;
 		max-width: 100%;
 		color: #FFF;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 
 	}
 

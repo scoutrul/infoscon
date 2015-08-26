@@ -49,7 +49,7 @@
 			</ul>
 
 			<ul>
-			<h2>Другие услуги</h2>
+			<h2>Прочие</h2>
 				<?php query_posts('cat=11'); ?>
 				<?php while (have_posts()) : the_post(); ?>
 				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
