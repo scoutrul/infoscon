@@ -16,7 +16,7 @@
 		<div class="contactpage">
 			<div class="contactpage__contact">
 				<form action="" class="contactpage__form">
-					<div class="contactpage__form__label"><h2>Напишите нам:</h2></div>
+					<div class="contactpage__form__label"><h3>Напишите нам:</h3></div>
 					<input type="text" placeholder="Организация">
 					<input type="text" placeholder="Контактное лицо">
 					<input type="text" placeholder="E-mail">

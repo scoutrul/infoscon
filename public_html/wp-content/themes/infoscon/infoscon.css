@@ -38,22 +38,33 @@
 		background-color: #141417;
 		background-image: url(images/raster.png);
 	
-}
-
-
-
-	blockquote {
-		border-left: 1px solid rgba(1, 135, 237, 0);
-    	padding: 10px 0 10px 40px;
-    	
-		margin: 70px 0 90px 0px;
-    	font-style: italic;
-    	-webkit-transition:.3s;
-    	        transition:.3s;
 	}
 
+
+	p {
+		padding-bottom: 30px;
+		margin: 0;
+}
+
+	blockquote {
+		border-left: 3px solid #F2D92C;
+    	
+		padding: 10px 0 10px 35px;
+    	
+		margin: 70px 0 90px 30px;
+    	
+		font-style: italic;
+    	-webkit-transition:.3s;
+    	        transition:.3s;
+	
+		font-size: 160%;
+		line-height: 150%;
+		font-weight: 400;
+		color: #232323;
+}
+
 			blockquote:hover {
-			    border-left: 1px solid #E4CD2A;
+			    border-left: 3px solid #078AEF;
 			}
 
 
@@ -104,9 +115,12 @@
 	h1,h2,h3,h4 {
 		font-family: 'Roboto Slab', serif;
 		color: #1D1D1D;
-    	margin: 40px 0 30px 0;
+    	
+		padding: 0px 0 30px 0;
     	line-height: 155%;
-	}
+	
+		margin: 0;
+}
 
 	h1 {
     	font-size: 34px;
@@ -199,21 +213,17 @@ ol.index {
 	ol.index li {
 	    display: inline-block;
 	    vertical-align: top;
-	    min-height: 420px;
-	    padding: 0 30px;
-	    margin: 20px 0px 40px 0;
+	    padding: 0;
+	    margin: 20px 0px 40px 0px;
 	    line-height: 180%;
 	    -webkit-transition:.16s;
-	            transition:.16s;
+	            
+	    transition: .1s ease-in-out;
 	    border-bottom: 1px solid #FFF;
 	
 }
 
 	 
-
-		ol.index li:hover {
-			border-bottom: 3px solid #FFD800;
-		}
 
 
 		ol.index li:before {
@@ -226,8 +236,18 @@ ol.index {
 
 
 	ol.index li p {
-    padding: 0 0 30px 0;
-		
+    	padding: 30px 20px 30px 20px;
+    	opacity: .8;
+	
+    	margin: 0 10px;
+    	min-height: 250px;
+    	transition: .3s ease-in-out;
+    	border-bottom: 3px solid #FFFFFF;
+}
+
+	ol.index li:hover p {
+    	opacity: 1;
+    	border-bottom: 3px solid #FFD800;
 	}
 
 header {
@@ -241,6 +261,7 @@ header {
 	-o-transition: all .1s ease;
 	overflow: hidden;
 	background-image: url(images/raster.png);
+	background-repeat: no-repeat;
 }
 
 		header .header {
@@ -258,18 +279,11 @@ header {
 			margin: auto;
 			padding: 0 30px;
 			overflow: hidden;
-		
 			z-index: 0;
 }
 
 		header .logo {
 			margin: auto 50px auto 0;
-			  
-			  
-			  
-			  
-			  
-		
 			z-index: 10;
 			height: 30px;
 			width: 166px;
@@ -281,6 +295,9 @@ header {
 					    cursor: pointer;
 					}
 
+		header.mobile .top_menu {
+			margin-top:40px;
+		}
 
 		header .top_menu {
 			line-height: 100px;
@@ -295,7 +312,8 @@ header {
 			display: flex;
 			width: 100%;
 			min-width: 320px;
-			}
+			transition: .1s ease-in;
+}
 
 				header .top_menu ul {
 					margin: auto;
@@ -314,7 +332,11 @@ header {
 							max-width: 130px;
 							text-align: center;
 							width: 100%;
-						}
+						
+							padding: 5px 0;
+							letter-spacing: 0.17em;
+							overflow: hidden;
+}
 
 header .top_menu li.current-menu-item a {
   color: #F2D92C;
@@ -459,7 +481,6 @@ header .top_menu li.current-menu-item a:before {
     font-style: italic;
 
 	
-    font-weight: 300;
     margin-left: 30px;
 }
 	.breadcrumbs__nav a {
@@ -838,6 +859,7 @@ section.post .price-price {
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    white-space: nowrap;
 } 
 
 					section.post .price-price:after {
@@ -1015,7 +1037,7 @@ footer {
 		}
 
 				footer .order:hover {
-					opacity:.9;
+					/* opacity:.9; */
 					filter: alpha(opacity=90);
 					background-image: -webkit-linear-gradient(170deg, #33A4FC, #0086ED);
 					background-image: linear-gradient(280deg, #33A4FC, #0086ED);
@@ -1096,7 +1118,7 @@ footer {
 
 
 
-/* MODULE MENU BURDER  */
+/* MODULE MENU BURGER  */
 
 
 .xmenu {
@@ -1113,7 +1135,7 @@ footer {
 
 		.x1, .x2, .x3 {
 			margin-top: 3px;
-			background: rgba(242, 217, 44, 1);
+			background: #F2D92C;
 			width: 100%;
 			max-width: 30px;
 			height: 2px;
@@ -1149,6 +1171,8 @@ footer {
 .mobile .xmenu>div {
 	background-color:#FFF
 } 
+.mobile .xmenu:hover div {
+	background-color: #F2D92C;} 
 
 .mobile .xmenu .x3{
 	-webkit-transform: rotate(45deg);
@@ -1294,7 +1318,10 @@ header.mobile {
 								    -ms-flex-direction: column;
 								        flex-direction: column;
 								-webkit-flex-direction: column;
-							}
+							
+								margin-top: 55px;
+								z-index: 0;
+}
 
 									header .top_menu ul {
 									    -webkit-box-orient: vertical;
@@ -1398,6 +1425,7 @@ header.mobile {
 	        flex-direction: column;
 	-webkit-flex-direction: column;
 	border-radius: 0%;
+	z-index: 10000;
 
 }
 
@@ -1434,24 +1462,21 @@ header.mobile {
     font-weight: 300;
 }
 
+
 .contactForm .orderclose {
-	color:#FFF;
+	color: #E5E5E5;
 	cursor: pointer;
 	position: absolute;
 	right: 10%;
+	padding: 10px;
 	top: 10%;
-	font-size: 5em;
-	-webkit-transform: rotate(-135deg);
-	    -ms-transform: rotate(-135deg);
-	        transform: rotate(-135deg);
+	font-size: 3em;
+	font-weight: 300;
+	transform: rotate(-495deg);
 }
 .contactForm .orderclose:hover {
-	-webkit-transform: rotate(-495deg);
-	    -ms-transform: rotate(-495deg);
-	        transform: rotate(-495deg);
-	-webkit-transition:.7s;
-	        transition:.7s;
-}
+    color: #F2D92C;
+	    
 
 
 /* CONTACT PAGE */
@@ -1928,6 +1953,7 @@ header.mobile {
 }
 
 /* //arrow down */
+
 
 
 
