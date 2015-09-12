@@ -12,7 +12,6 @@
 		<div class="post_content"><?php the_content(); ?></div>
 			<?php
 						if( get_post_meta($post->ID, 'price', true) ) {?>
-						<div class="post_order">Заказать</div>
 						<div class="price">
 							<div class="price-text">
 								<? 
@@ -26,9 +25,11 @@
 								 	echo get_post_meta($post->ID, 'price', true); 
 								 ?>
 							</div>
-							 
 						</div>	
 			<?}?>
+						<?php include('order_button.php');?>
+
+
 	</div>
 
 

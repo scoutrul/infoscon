@@ -5,7 +5,17 @@
 	<meta charset="UTF-8">
 	<title>ИНФОСВЯЗЬ КОНСАЛТИНГ</title>
 
+	<meta name="description" content="<?php echo get_post_meta($post->ID, 'description', true); ?>" />
+	<meta name="keywords" content="<?php echo get_post_meta($post->ID, 'keywords', true); ?>" />
+	
 	<?php $host = $_SERVER['REQUEST_URI']; ?>
+
+
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
+
+
+
+
 
 
 </head>

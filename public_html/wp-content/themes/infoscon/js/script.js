@@ -3,6 +3,64 @@
 
 $(function() {
 
+
+//order form 
+
+	var order = $('.post_order');
+
+	//hide order button if this is a artcle page
+	if ($(".container > h1:contains('Статья')").length) {
+		order.css({
+			"display": "none"
+		});
+	};
+	//
+
+
+
+
+
+// open forms
+
+	//the blue order button
+		$('.order').click(function(){
+			$('#contactForm form').removeClass('animated fadeOut zoomOut');
+			$('#contactForm').removeClass('animated slideInDown slideOutUp');
+			$('#contactForm').addClass('active animated slideInDown');
+		});
+
+		$('.orderclose, #contactForm .send').click(function(){
+			$('#contactForm').removeClass('active animated slideInDown slideOutUp');
+			$('#contactForm').addClass('active animated slideOutUp');
+		});
+
+		$('#contactForm .send').click(function(){
+			$('#contactForm form').addClass('animated fadeOut zoomOut');
+		});
+
+	//the yellow order button
+
+		var orderText = $('.container > h1').text();
+		$('#orderForm .h1').append('<div>\"'+orderText+'\"</div>');
+
+
+		$(order).click(function(){
+			$('#orderForm form').removeClass('animated fadeOut zoomOut');
+			$('#orderForm').removeClass('animated slideInDown slideOutUp');
+			$('#orderForm').addClass('active animated slideInDown');
+		});
+
+		$('.orderclose, #orderForm .send').click(function(){
+			$('#orderForm').removeClass('active animated slideInDown slideOutUp');
+			$('#orderForm').addClass('active animated slideOutUp');
+		});
+
+		$('#orderForm .send').click(function(){
+			$('#orderForm form').addClass('animated fadeOut zoomOut');
+		});
+
+
+
 	var id = 1 ;
 
 	 function teleScreen(){
@@ -73,27 +131,8 @@ $(function() {
 
 
 
-// contact form
-		$('.order').click(function(){
-			$('#contactForm form').removeClass('animated fadeOut zoomOut');
-			$('#contactForm').removeClass('animated slideInDown slideOutUp');
-			$('#contactForm').addClass('active animated slideInDown');
-		});
 
-		$('.orderclose, #contactForm button').click(function(){
-			$('#contactForm').removeClass('active animated slideInDown slideOutUp');
-			$('#contactForm').addClass('active animated slideOutUp');
-		});
-
-		$('#contactForm button').click(function(){
-			$('#contactForm form').addClass('animated fadeOut zoomOut');
-		});
-
-
-
-
-// a eta hueta bolshe ne rabotaet!!!
-// scroll's
+// scroll's href
 
 		$(".whois").click(function() {
 		    $('html, body').animate({
@@ -101,45 +140,67 @@ $(function() {
 		    }, 500);
 		});
 
-		$( window ).scroll(function() {
+// scroll's parallax
 
+
+if($("#scroll-flag").length >= 1) {
+	
+		var topScrollGo = function() {
 			var topScroll = $(this).scrollTop();
-
-			//$('.s_bg').css('margin-top', ''+ translate3d/6.7 +'px');
 			$('.s_bg').css({transform: 'translate3d(0px,'+ topScroll/3.35 +'px,0px)'});
-
-		});
-
-
+		};
+			$( window ).scroll(topScrollGo);
 
 
+		var whyweFunc = function() {
 
-}); // end
+			var topScroll = $(window).scrollTop();
+			var wHeight = $('.whywe').height();
+			var wOffset = $('.whywe').offset().top;
+			var velo = topScroll-wHeight;
+			var veloZ = wOffset-wHeight;
+			var veloDone = velo - veloZ;
+
+
+			if (topScroll >= veloZ) {
+				$('.whywe_bg').css({transform: 'translate3d(0px,'+ veloDone/3.35 +'px,0px)'});
+				console.log(veloDone);
+			}
+			else {
+				console.log('no')
+			}	
+			
+		};$( window ).scroll(whyweFunc);
+
 
 
 
 
 
 // smooth scroll default
-$(function(){	
 
-        var $window = $(window);
-	var scrollTime = 1.2;
-	var scrollDistance = 370;
 
-	$window.on("mousewheel DOMMouseScroll", function(event){
+		/*set to ">" for eneble only on index-page */ 
+		var $window = $(window);	
+		var scrollTime = .3;
+		var scrollDistance = 10;
 
-		event.preventDefault();	
+		$window.on("mousewheel DOMMouseScroll", function(event){
 
-		var delta = event.originalEvent.wheelDelta/100 || -event.originalEvent.detail/3;
-		var scrollTop = $window.scrollTop();
-		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+			event.preventDefault();	
 
-		TweenMax.to($window, scrollTime, {
-			scrollTo : { y: finalScroll, autoKill:true },
-				ease: Power1.easeOut,
-				overwrite: 5							
-			});
+			var delta = event.originalEvent.wheelDelta/5 || -event.originalEvent.detail/3;
+			var scrollTop = $window.scrollTop();
+			var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 
-	});
+			TweenMax.to($window, scrollTime, {
+				scrollTo : { y: finalScroll, autoKill:true },
+					ease: Power1.ease,
+					overwrite: 20							
+				});
+
+		});
+	};
+
+
 });
