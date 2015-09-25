@@ -27,7 +27,7 @@
 							</div>
 						</div>	
 			<?}?>
-						<?php include('order_button.php');?>
+		<div class="post_order">Заказать</div>
 
 
 	</div>

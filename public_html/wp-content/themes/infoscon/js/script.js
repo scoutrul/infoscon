@@ -14,6 +14,12 @@ $(function() {
 			"display": "none"
 		});
 	};
+	// replace fcking Post-header
+	if ($("#sitemap_posts > h3:contains('Записи')").length) {
+		$("#sitemap_posts > h3:contains('Записи')").css({
+			"display": "none"
+		});
+	};
 	//
 
 
@@ -29,7 +35,7 @@ $(function() {
 			$('#contactForm').addClass('active animated slideInDown');
 		});
 
-		$('.orderclose, #contactForm .send').click(function(){
+		$('#contactForm .orderclose, #contactForm .send').click(function(){
 			$('#contactForm').removeClass('active animated slideInDown slideOutUp');
 			$('#contactForm').addClass('active animated slideOutUp');
 		});
@@ -50,7 +56,7 @@ $(function() {
 			$('#orderForm').addClass('active animated slideInDown');
 		});
 
-		$('.orderclose, #orderForm .send').click(function(){
+		$('#orderForm .orderclose, #orderForm .send').click(function(){
 			$('#orderForm').removeClass('active animated slideInDown slideOutUp');
 			$('#orderForm').addClass('active animated slideOutUp');
 		});
@@ -75,7 +81,7 @@ $(function() {
 		$('.s_bg').css('background-image', 'url("' + image +'")');
 	//animation	
 
-		$('.s_bg').css({'opacity':'0', 'transform':'translate3d(0px,0px, 0px'}).animate({opacity: '.9'},300);
+		$('.s_bg').css({'opacity':'0', 'transform':'translate3d(0px,0px, 0px'}).animate({opacity: '.6'},300);
 	};teleScreen()
 
 
@@ -116,16 +122,16 @@ $(function() {
 
 
 // menu burger 
-		var xmenuToggle = 0;
+		var xmenuToggle = true;
 
-		$('.xmenu').click(function(){
-					if(xmenuToggle == 0) {
+		$('.xmenu, .header .order').click(function(){
+					if(xmenuToggle === true) {
 					$('header').addClass('mobile');
-					xmenuToggle++;
+					xmenuToggle = false;
 				}
 				else {
 					$('header').removeClass('mobile');
-					xmenuToggle--;
+					xmenuToggle = false;
 				}
 		});
 
@@ -139,6 +145,8 @@ $(function() {
 		        scrollTop: $(".about").offset().top
 		    }, 500);
 		});
+
+
 
 // scroll's parallax
 

@@ -23,12 +23,11 @@
 
 
 			<?php
-			// Цикл 1
-			$query1 = new WP_Query('page_id=269'); // страница с id 28
-			while($query1->have_posts()) $query1->the_post(); ;?>
-
-			<?php the_content(); ?>
-			<?php wp_reset_query(); ?>
+				$query1 = new WP_Query('page_id=269'); 
+					while($query1->have_posts()) $query1->the_post(); 
+					the_content();
+				wp_reset_query(); 
+			?>
 			
 		<section class="copyright">© Cайт компании "ИнфоСвязь Консалтинг", мы занимаемся лицензированием услуг связи. </section>
 	</section>
