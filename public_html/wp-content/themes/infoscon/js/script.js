@@ -78,7 +78,7 @@ $(function() {
 		$('.active').addClass('animated fadeIn');
 		$('.readmore').addClass('animated flipInX');
 		var image = $('.'+id+'').attr('data-image');
-		$('.s_bg').css('background-image', 'url("' + image +'")');
+		$('.s_bg').css('background-image', 'url("' + image +'?cash")');
 	//animation	
 
 		$('.s_bg').css({'opacity':'0', 'transform':'translate3d(0px,0px, 0px'}).animate({opacity: '.6'},300);
