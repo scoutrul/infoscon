@@ -124,14 +124,14 @@ $(function() {
 // menu burger 
 		var xmenuToggle = true;
 
-		$('.xmenu, .header .order').click(function(){
-					if(xmenuToggle === true) {
+		$('.xmenu').click(function(){
+				if(xmenuToggle === true) {
 					$('header').addClass('mobile');
 					xmenuToggle = false;
 				}
 				else {
 					$('header').removeClass('mobile');
-					xmenuToggle = false;
+					xmenuToggle = true;
 				}
 		});
 
@@ -172,11 +172,9 @@ if($("#scroll-flag").length >= 1) {
 
 			if (topScroll >= veloZ) {
 				$('.whywe_bg').css({transform: 'translate3d(0px,'+ veloDone/3.35 +'px,0px)'});
-				console.log(veloDone);
+/*				console.log(veloDone);*/
 			}
-			else {
-				console.log('no')
-			}	
+
 			
 		};$( window ).scroll(whyweFunc);
 

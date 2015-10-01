@@ -65,6 +65,6 @@
 
 			</section>
 
-			<div class="index_padding whois">
-				<div class=" arrow bounce" ></div>
+			<div class="header_padding whois">
+				<div class="arrow bounce"></div>
 			</div>
