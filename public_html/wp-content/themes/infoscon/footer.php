@@ -18,9 +18,7 @@
 			</ul>
 		</nav>
 
-
-			<div class="order" id="freeCons">Бесплатная консультация</div>
-
+		<div class="contact_block_container">
 
 			<?php
 				$query1 = new WP_Query('page_id=269'); 
@@ -28,7 +26,12 @@
 					the_content();
 				wp_reset_query(); 
 			?>
-			
+
+
+
+			<div class="order" id="freeCons">Бесплатная консультация</div>
+		</div>
+
 		<section class="copyright">© Cайт компании "ИнфоСвязь Консалтинг", мы занимаемся лицензированием услуг связи. </section>
 	</section>
 
@@ -42,10 +45,14 @@
 	<div class="orderclose">+</div>
 		<form action="#">
 			<div class="contactform-label">Вопросы?</div>
-			<input type="text" placeholder="Представьтесь">
-			<input type="text" placeholder="Как с Вами связаться?">
-			<textarea name="" id="" cols="30" rows="10" placeholder="Что Вас интересует?"></textarea>
-			<div class="send">Отправить</div>
+			<label>Ваше имя:
+				<input type="text" placeholder="Представьтесь" id="form_name">
+			</label>
+			<label>Ваш контакт:
+				<input type="text" placeholder="Как с Вами связаться?" id="form_contact">
+			</label>
+			<textarea name="text" cols="30" rows="10" placeholder="Что Вас интересует?" id="form_text"></textarea>
+			<button class="send_mail">Отправить</button>
 		</form>
 	</div>
 	<!-- //Feedback form -->
@@ -55,10 +62,14 @@
 	<div class="orderclose">+</div>
 		<form action="#">
 			<div class="h1">Предварительный заказ:</div>
-			<input type="text" placeholder="Представьтесь">
-			<input type="text" placeholder="Как с Вами связаться?">
-			<textarea name="" id="" cols="30" rows="6" placeholder="Хотите что-нибудь добавить?"></textarea>
-			<div class="send">Заказать</div>
+			<label>Ваше имя:
+				<input type="text" placeholder="Представьтесь" name="name" id="form_name_order">
+			</label>
+			<label>Ваш контакт:
+				<input type="text" placeholder="Как с Вами связаться?" name="contact" id="form_contact_order">
+			</label>
+			<textarea name="" cols="30" rows="6" placeholder="Хотите что-нибудь добавить?" name="text" id="form_text_order"></textarea>
+			<button class="send_order">Заказать</button>
 		</form>
 	</div>
 	<!-- //order form -->

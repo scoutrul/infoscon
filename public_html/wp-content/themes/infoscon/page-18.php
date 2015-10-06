@@ -15,12 +15,17 @@
 
 		<div class="contactpage">
 			<div class="contactpage__contact">
+
 				<form action="" class="contactpage__form">
-					<div class="contactpage__form__label"><h3>Напишите нам:</h3></div>
-					<input type="text" placeholder="Организация">
-					<input type="text" placeholder="Контактное лицо">
-					<input type="text" placeholder="E-mail">
-					<input type="text" placeholder="Телефон">
+					<div class="contactpage__form__label">
+						<h3>Напишите нам:</h3>
+					</div>
+
+					<input type="text" placeholder="Организация" id="contact_org">
+					<input type="text" placeholder="Контактное лицо" id="contact_face">
+					<input type="text" placeholder="E-mail" id="contact_email">
+					<input type="text" placeholder="Телефон" id="contact_phone">
+
 					<div class="contactpage__form__about">
 						<div class="contactpage__form__label--check">Тема сообщения:</div>
 						<label>
@@ -33,8 +38,9 @@
 							<input type="checkbox">Продление лицензий связи
 						</label>
 					</div>
-					<textarea name="" id="" placeholder="Введите сообщение"></textarea>
-					<button>Отправить</button>
+					<textarea placeholder="Введите сообщение" id="contact_text"></textarea>
+					<button id="contact_send">Отправить</button>
+
 				</form>
 			</div>
 			<div class="contactpage__contact">

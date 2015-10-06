@@ -6,7 +6,7 @@ $(function() {
 
 //order form 
 
-	var order = $('.post_order');
+	var order = $('.post_order'); // the yellow order button in the post service page
 
 	//hide order button if this is a artcle page
 	if ($(".container > h1:contains('Статья')").length) {
@@ -14,9 +14,14 @@ $(function() {
 			"display": "none"
 		});
 	};
-	// replace fcking Post-header
+	// replace fcking Post-header on sitemap page
 	if ($("#sitemap_posts > h3:contains('Записи')").length) {
 		$("#sitemap_posts > h3:contains('Записи')").css({
+			"display": "none"
+		});
+	};
+	if ($("#sitemap_pages li:contains('Блок: контакты')").length) {
+		$("#sitemap_pages li:contains('Блок: контакты')").css({
 			"display": "none"
 		});
 	};
@@ -35,14 +40,11 @@ $(function() {
 			$('#contactForm').addClass('active animated slideInDown');
 		});
 
-		$('#contactForm .orderclose, #contactForm .send').click(function(){
+		$('#contactForm .orderclose').click(function(){
 			$('#contactForm').removeClass('active animated slideInDown slideOutUp');
 			$('#contactForm').addClass('active animated slideOutUp');
 		});
 
-		$('#contactForm .send').click(function(){
-			$('#contactForm form').addClass('animated fadeOut zoomOut');
-		});
 
 	//the yellow order button
 
@@ -56,12 +58,12 @@ $(function() {
 			$('#orderForm').addClass('active animated slideInDown');
 		});
 
-		$('#orderForm .orderclose, #orderForm .send').click(function(){
+		$('#orderForm .orderclose, #orderForm .send_mail').click(function(){
 			$('#orderForm').removeClass('active animated slideInDown slideOutUp');
 			$('#orderForm').addClass('active animated slideOutUp');
 		});
 
-		$('#orderForm .send').click(function(){
+		$('#orderForm .send_mail').click(function(){
 			$('#orderForm form').addClass('animated fadeOut zoomOut');
 		});
 
@@ -209,4 +211,166 @@ if($("#scroll-flag").length >= 1) {
 	};
 
 
+
+
+// mail sender =>
+
+	$(".send_mail").click(function() {
+
+		$('.form_error').removeClass('form_error');
+
+		var hasError = false;
+
+		var name = $("#form_name").val();
+		if (name == '') {
+			$("#form_name").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		} 
+
+		var contact = $("#form_contact").val();
+		if(contact == '') {
+			$("#form_contact").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+
+		var message = $("#form_text").val();
+		if(message == '' ) {
+			$("#form_text").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+
+		var dataString = 'name=' + name + '&contact=' + contact + '&message=' + message;
+
+		$.ajax({
+		type: "POST",
+		url: "/mail.php",
+		data: dataString,
+			success: function() {
+				$('.contactForm').removeClass('active animated slideInDown slideOutUp');
+				$('.contactForm').addClass('active animated slideOutUp');
+				alert("Ваше сообщение отправленно!"); 
+			}
+		});
+		return false;
+	});
+
+
+
+// order sender =>
+
+	$(".send_order").click(function() {
+
+		$('.form_error').removeClass('form_error');
+
+		var hasError = false;
+
+		var name = $("#form_name_order").val();
+		if (name == '') {
+			$("#form_name_order").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		} 
+
+		var contact = $("#form_contact_order").val();
+		if(contact == '') {
+			$("#form_contact_order").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+
+		var message = $("#form_text_order").val();
+		if(message == '' ) {
+			$("#form_text_order").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+
+		var dataString = 'name=' + name + '&contact=' + contact + '&message=' + message;
+
+		$.ajax({
+		type: "POST",
+		url: "/mail.php",
+		data: dataString,
+			success: function() {
+				$('.contactForm').removeClass('active animated slideInDown slideOutUp');
+				$('.contactForm').addClass('active animated slideOutUp');
+				alert("Ваше сообщение отправленно!"); 
+			}
+		});
+		return false;
+	});
+
+// contact sender =>
+
+	$("#contact_send").click(function() {
+
+		$('.form_error').removeClass('form_error');
+
+		var hasError = false;
+
+		var contact_org = $("#contact_org").val();
+		if (contact_org == '') {
+			$("#contact_org").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		} 
+
+		var contact_face = $("#contact_face").val();
+		if(contact_face == '') {
+			$("#contact_face").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+
+		var contact_text = $("#contact_text").val();
+		if(contact_text == '' ) {
+			$("#contact_text").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+		var contact_phone = $("#contact_phone").val();
+		if(contact_phone == '' ) {
+			$("#contact_phone").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+		var contact_email = $("#contact_email").val();
+		if(contact_email == '' ) {
+			$("#contact_email").focus().addClass('form_error');
+			hasError = true;
+			return false;
+		}
+
+
+		var dataString = 'contact_org=' + contact_org + '&contact_face=' + contact_face + '&contact_text=' + contact_text + '&contact_email=' + contact_email + '&contact_phone=' + contact_phone;
+
+		$.ajax({
+		type: "POST",
+		url: "/contact_mail.php",
+		data: dataString,
+			success: function() {
+				//clear form
+				$(".contactpage__form").find("input[type=text], textarea").val("")
+				alert("Ваше сообщение отправленно!"); 
+			}
+		});
+		return false;
+	});
+
+
+
+// end script
 });
+
+
+
