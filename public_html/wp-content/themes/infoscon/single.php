@@ -32,7 +32,11 @@
 
 	</div>
 
-
+	<div>
+		<i>Нам нравится то, что мы делаем, и <b>мы будем рады быть Вам полезными</b> в развитии Вашего бизнеса.</i><br>
+		<b>Контактный телефон:</b> 8 (985) 126-43-14 <br>
+		<b>E-mail:</b> <a href="mailto:info@infoscon.ru">info@infoscon.ru</a>
+	</div>
 </section>
 
 <?php endwhile; endif; ?>
