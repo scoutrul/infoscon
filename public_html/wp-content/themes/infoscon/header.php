@@ -3,20 +3,14 @@
 <head>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>ИНФОСВЯЗЬ КОНСАЛТИНГ</title>
+	<title>ИНФОСВЯЗЬ КОНСАЛТИНГ / лицензии на услуги связи (регистрация, продление, переоформление)</title>
 
 	<meta name="description" content="<?php echo get_post_meta($post->ID, 'description', true); ?>" />
 	<meta name="keywords" content="<?php echo get_post_meta($post->ID, 'keywords', true); ?>" />
 	
 	<?php $host = $_SERVER['REQUEST_URI']; ?>
 
-
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
-
-
-
-
-
 
 </head>
 <body>
@@ -33,7 +27,7 @@
 				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="ИнфоСвязь Консалтинг" class="gohome">
 			</div>
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
-			<a class="order">Заказать лицензию</a>
+			<a class="order" id="freeCons">Вопросы?</a>
 		</section>
 	</header>
 

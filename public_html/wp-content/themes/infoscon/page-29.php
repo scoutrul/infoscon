@@ -1,13 +1,20 @@
 <?php get_header(); ?>
 
 <!-- Услуги -->
-ili tutua
+
 
 <section class="page  page-services"> 
 	<h1>Лицензирование и продление услуг связи</h1>
 	<div class="container">
 			<ul>
-			<h2>Телематические услуги связи</h2>
+			<h2>Лицензии на услуги связи</h2>
+				<?php query_posts('cat=12'); ?>
+				<?php while (have_posts()) : the_post(); ?>
+				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+				<?php endwhile; ?>
+			</ul>
+			<ul>
+			<h2>Телематические услуги связи123</h2>
 				<?php query_posts('cat=5'); ?>
 				<?php while (have_posts()) : the_post(); ?>
 				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>

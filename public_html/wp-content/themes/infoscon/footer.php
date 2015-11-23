@@ -29,7 +29,7 @@
 
 
 
-			<div class="order" id="freeCons">Бесплатная консультация</div>
+			<div class="order" id="bottomForm">Заказать лицензию</div>
 		</div>
 
 		<section class="copyright">© Cайт компании "ИнфоСвязь Консалтинг", мы занимаемся лицензированием услуг связи. </section>
@@ -42,14 +42,14 @@
 <noindex>
 	<!-- Feedback form -->
 	<div id="contactForm" class="contactForm">
-	<div class="orderclose">+</div>
+		<div class="orderclose">+</div>
 		<form action="#">
 			<div class="contactform-label">Вопросы?</div>
 			<label>Ваше имя:
 				<input type="text" placeholder="Представьтесь" id="form_name">
 			</label>
-			<label>Ваш контакт:
-				<input type="text" placeholder="Как с Вами связаться?" id="form_contact">
+			<label>Контакты:
+				<input type="text" placeholder="e-mail" id="form_contact">
 			</label>
 			<textarea name="text" cols="30" rows="10" placeholder="Что Вас интересует?" id="form_text"></textarea>
 			<button class="send_mail">Отправить</button>
@@ -59,14 +59,14 @@
 
 	<!-- order form -->
 	<div id="orderForm" class="contactForm">
-	<div class="orderclose">+</div>
+		<div class="orderclose">+</div>
 		<form action="#">
 			<div class="h1">Предварительный заказ:</div>
 			<label>Ваше имя:
 				<input type="text" placeholder="Представьтесь" name="name" id="form_name_order">
 			</label>
-			<label>Ваш контакт:
-				<input type="text" placeholder="Как с Вами связаться?" name="contact" id="form_contact_order">
+			<label>Контакты:
+				<input type="text" placeholder="e-mail" name="contact" id="form_contact_order">
 			</label>
 			<textarea name="" cols="30" rows="6" placeholder="Хотите что-нибудь добавить?" name="text" id="form_text_order"></textarea>
 			<button class="send_order">Заказать</button>

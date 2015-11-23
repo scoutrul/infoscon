@@ -11,9 +11,11 @@
 
 
 						<?php
+						/*
 						if( get_post_meta($post->ID, 'price', true) ) {?>
 						<div class="price">
 							<span class="price-price"><?php echo get_post_meta($post->ID, 'price', true) ?></span>
 						</div>	
-						<?}?>
+						<?}
+						*/?>
 					</li>	

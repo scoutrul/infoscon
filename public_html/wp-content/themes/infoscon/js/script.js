@@ -4,16 +4,9 @@
 $(function() {
 
 
-//order form 
 
-	var order = $('.post_order'); // the yellow order button in the post service page
 
-	//hide order button if this is a artcle page
-	if ($(".container > h1:contains('Статья')").length) {
-		order.css({
-			"display": "none"
-		});
-	};
+
 	// replace fcking Post-header on sitemap page
 	if ($("#sitemap_posts > h3:contains('Записи')").length) {
 		$("#sitemap_posts > h3:contains('Записи')").css({
@@ -33,14 +26,23 @@ $(function() {
 
 // open forms
 
-	//the blue order button
-		$('.order').click(function(){
+	//the consultation form
+		$('#freeCons').click(function(){
 			$('#contactForm form').removeClass('animated fadeOut zoomOut');
 			$('#contactForm').removeClass('animated slideInDown slideOutUp');
 			$('#contactForm').addClass('active animated slideInDown');
 		});
 
-		$('#contactForm .orderclose').click(function(){
+
+	//the consultation form
+		$('#bottomForm').click(function(){
+			$('#contactForm form').removeClass('animated fadeOut zoomOut');
+			$('#contactForm').removeClass('animated slideInDown slideOutUp');
+			$('#contactForm').addClass('active animated slideInDown');
+		});
+
+	// close form
+		$('.orderclose').click(function(){
 			$('#contactForm').removeClass('active animated slideInDown slideOutUp');
 			$('#contactForm').addClass('active animated slideOutUp');
 		});
@@ -52,21 +54,27 @@ $(function() {
 		$('#orderForm .h1').append('<div>\"'+orderText+'\"</div>');
 
 
-		$(order).click(function(){
+		$('.post_order').click(function(){
 			$('#orderForm form').removeClass('animated fadeOut zoomOut');
 			$('#orderForm').removeClass('animated slideInDown slideOutUp');
 			$('#orderForm').addClass('active animated slideInDown');
 		});
 
-		$('#orderForm .orderclose, #orderForm .send_mail').click(function(){
+		$('.orderclose').click(function(){
 			$('#orderForm').removeClass('active animated slideInDown slideOutUp');
 			$('#orderForm').addClass('active animated slideOutUp');
 		});
 
-		$('#orderForm .send_mail').click(function(){
-			$('#orderForm form').addClass('animated fadeOut zoomOut');
-		});
 
+		 
+		// the yellow order button in the post service page
+		//hide order button in the artcle page
+		if ($(".container > h1:contains('Статья')").length) {
+			$('.post_order').css({
+				"display": "none"
+			});
+		};
+	/////////////////////
 
 
 	var id = 1 ;
@@ -213,7 +221,7 @@ if($("#scroll-flag").length >= 1) {
 
 
 
-// mail sender =>
+// mail sender => contact page
 
 	$(".send_mail").click(function() {
 
@@ -252,7 +260,7 @@ if($("#scroll-flag").length >= 1) {
 		data: dataString,
 			success: function() {
 				$('.contactForm').removeClass('active animated slideInDown slideOutUp');
-				$('.contactForm').addClass('active animated slideOutUp');
+				$('.contactForm').addClass('active animated slideOutUp').find("input[type=text], textarea").val("");
 				alert("Ваше сообщение отправленно!"); 
 			}
 		});
@@ -300,7 +308,7 @@ if($("#scroll-flag").length >= 1) {
 		data: dataString,
 			success: function() {
 				$('.contactForm').removeClass('active animated slideInDown slideOutUp');
-				$('.contactForm').addClass('active animated slideOutUp');
+				$('.contactForm').addClass('active animated slideOutUp').find("input[type=text], textarea").val("");
 				alert("Ваше сообщение отправленно!"); 
 			}
 		});

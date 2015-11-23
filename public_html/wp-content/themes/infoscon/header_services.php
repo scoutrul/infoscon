@@ -3,61 +3,69 @@
 					<div class="menu">
 					<div class="header">Наши услуги <a href="/uslugi/" class="all">Все</a></div>
 						<ul>
-							<li id="service1"><a href="#">Телематические услуги связи</a></li>
-							<li id="service2"><a href="#">Телефония</a></li>
-							<li id="service3"><a href="#">Разрешения на частоты</a></li>
-							<li id="service4"><a href="#">Лицензии на услуги связи</a></li>
-							<li id="service5"><a href="#">Продление лицензий</a></li>
+							<li id="service1"><a href="#">Лицензии на услуги связи</a></li>
+							<li id="service2"><a href="#">Лицензии на вещание</a></li>
+							<li id="service3"><a href="#">Регистрация СМИ</a></li>
+							<li id="service4"><a href="#">Продление и переоформление</a></li>
+							<li id="service5"><a href="#">Разрешения на частоты</a></li>
 						</ul>	
 					</div>
 
 					<div class="info">
 						<div class="text service1" data-image="<?php bloginfo('template_url'); ?>/images/index_01.jpg">
-							<div class="header">Телематические услуги связи</div>
-							<p>Телематика — одна из самых востребованных услуг связи. 
-							Лицензирование телематических услуг  необходимо для 
-							интернет- и контент-провайдеров, а также компаниям спутникового мониторинга.</p>
+							<div class="header">Лицензии на услуги связи</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
 							<div class="price">7 999</div>
 							<a class="readmore" href="/category/telematic/">Подробнее</a>
 						</div>
 
 						<div class="text service2"  data-image="<?php bloginfo('template_url'); ?>/images/index_02.jpg">
-							<div class="header">Телефония</div>
-							<p>Телефония — это наиболее современный метод для передачи голосовой информации. 
-							Применение данной технологии существенно снижает стоимость звонков, 
-							особенно по международным направлениям. 
-							Чтобы оказывать подобные услуги, необходимо получить соответствующую лицензию.</p>
-
+							<div class="header">Вещательные лицензия</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
 							<div class="price">8 000</div>
 							<a class="readmore" href="/category/telephonic/">Подробнее</a>
 						</div>
 
-						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/index_03.jpg">
+						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/index_04.jpg">
+							<div class="header">Регистрация СМИ</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
+   							<a class="readmore" href="/category/telephonic/">Подробнее</a>
+						</div>
+
+						<div class="text service4" data-image="<?php bloginfo('template_url'); ?>/images/index_05.jpg">
+							<div class="header">Продление и переоформление</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
+							<div class="price">7 777</div>
+							<a class="readmore" href="/prodlenie-litsenzij-svyazi/">Подробнее</a>
+						</div>
+
+						<div class="text service5" data-image="<?php bloginfo('template_url'); ?>/images/index_03.jpg">
 							<div class="header">Разрешения на эфирные частоты</div>
-							<p>Наша компания предоставляет помощь в получении разрешений на использование радиочастот, 
-							ТВ-трансляции, частот для такси, охраны и др. Для легального ведения бизнеса необходимо последовательно 
-							получить целый пакет документов. С нашей помощью Вы гарантированно получите необходимую лицензию в короткие сроки. </p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
 							<div class="price">11 999</div>
 							<a class="readmore" href="/category/onair/">Подробнее</a>
 						</div>
 
-						<div class="text service4" data-image="<?php bloginfo('template_url'); ?>/images/index_04.jpg">
-							<div class="header">Лицензии на услуги связи</div>
-							<p>
-							Получим для Вас все необходимые лицензии и разрешения для оказания услуг связи: 
-							местная телефонная связь, внутризоновая, с выделенной сетью, использование таксофонов и т.д.
-							</p>
-							<div class="price">11 999</div>
-							<a class="readmore" href="/category/telephonic/">Подробнее</a>
-						</div>
-
-						<div class="text service5" data-image="<?php bloginfo('template_url'); ?>/images/index_05.jpg">
-							<div class="header">Продление лицензий связи</div>
-							<p>Компания ИнфоСвязьКонсалтинг всегда готова помочь Вам продлить или переоформить любые лицензии связи. 
-							Гарантированное получение и продление лицензий обязательно прописывается в нашем договоре.</p>
-							<div class="price">7 777</div>
-							<a class="readmore" href="/prodlenie-litsenzij-svyazi/">Подробнее</a>
-						</div>
 					</div>
 				</div>
 				<div class="s_bg"></div>
