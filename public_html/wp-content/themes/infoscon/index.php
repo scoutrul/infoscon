@@ -2,16 +2,12 @@
 
 
 
-		<div class="main">	
+		
 
 <?php
 if ( is_home() ) {
 
 			 require('header_services.php') ?>
-
-			<div class="header_padding">
-				<div class="whois arrow bounce" ></div>
-			</div>
 
 			<section class="about">
 
@@ -27,7 +23,7 @@ if ( is_home() ) {
 			</section>
 <?}?>			<!--<section class="portfolio"></section>-->
 
-		</div> <!-- /main -->
+
 
 
 	<?php get_footer(); ?>
