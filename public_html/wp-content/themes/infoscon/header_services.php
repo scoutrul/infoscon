@@ -1,59 +1,71 @@
-			<section class="services">
+			<section class="services" id="scroll-flag">
 				<div class="container">
 					<div class="menu">
-					<div class="header">Наши услуги <a href="/order/" class="all">Все</a></div>
+					<div class="header">Наши услуги <a href="/uslugi/" class="all">Все</a></div>
 						<ul>
-							<li id="service1"><a href="#">Телематические услуги связи</a></li>
-							<li id="service4"><a href="#">IP-Телефония</a></li>
-							<li id="service3"><a href="#">Разрешения на частоты</a></li>
-							<li id="service2"><a href="#">Лицензии на услуги связи</a></li>
-							<li id="service5"><a href="#">Продление лицензий</a></li>
+							<li id="service1"><a href="#">Лицензии на услуги связи</a></li>
+							<li id="service2"><a href="#">Лицензии на вещание</a></li>
+							<li id="service3"><a href="#">Регистрация СМИ</a></li>
+							<li id="service4"><a href="#">Продление и переоформление</a></li>
+							<li id="service5"><a href="#">Разрешения на частоты</a></li>
 						</ul>	
 					</div>
 
 					<div class="info">
-						<div class="text service1" data-image="<?php bloginfo('template_url'); ?>/images/header_01.jpg">
-							<div class="header">Телематические услуги связи</div>
-							<p>Одной из самых востребованных услуг связи является 
-							телематика. Лицензирование телематических услуг связи 
-							необходимо для интернет- и контент-провайдеров, а также 
-							компаниям спутникового мониторинга.</p>
-							<div class="price">7 999</div>
-							<a class="readmore" href="/телематические-услуги-связи/">Узнать подробности</a>
-						</div>
-
-						<div class="text service2" data-image="<?php bloginfo('template_url'); ?>/images/header_02.jpg">
+						<div class="text service1" data-image="<?php bloginfo('template_url'); ?>/images/index_01.jpg">
 							<div class="header">Лицензии на услуги связи</div>
-							<p>Второй из самых востребованных услуг связи является 
-							телематика. Лицензирование телематических услуг связи 
-							необходимо для интернет- и контент-провайдеров, а также 
-							компаниям спутникового мониторинга.Лицензирование телематических услуг связи 
-							необходимо для интернет- и контент-провайдеров, а также 
-							компаниям спутникового мониторинга.</p>
-							<div class="price">3 999</div>
-							<a class="readmore">Узнать подробности</a>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
+							<div class="price">7 999</div>
+							<a class="readmore" href="/category/telematic/">Подробнее</a>
 						</div>
 
-						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/header_03.jpg">
-							<div class="header">Разрешения на эфирные частоты, радио- и тв-трансляции по России.</div>
-							<p>Радио и тв-частоты по всей России!</p>
-							<div class="price">12 444</div>
-							<a class="readmore">Узнать подробности</a>
-						</div>
-
-						<div class="text service4"  data-image="<?php bloginfo('template_url'); ?>/images/header_04.jpg">
-							<div class="header">Телефония</div>
-							<p>Телефония позволяет организовывать (устанавливать соединение) и вести местные, внутризоновые, междугородные и международные телефонные переговоры и передавать факсы, а также устанавливать модемное соединение в режиме реального времени.</p>
+						<div class="text service2"  data-image="<?php bloginfo('template_url'); ?>/images/index_02.jpg">
+							<div class="header">Вещательные лицензия</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
 							<div class="price">8 000</div>
-							<a class="readmore">Узнать подробности</a>
+							<a class="readmore" href="/category/telephonic/">Подробнее</a>
 						</div>
 
-						<div class="text service5" data-image="<?php bloginfo('template_url'); ?>/images/header_05.jpg">
-							<div class="header">Продление лицензий связи</div>
-							<p>На любые услуги связи необходимо продливать лицензию. Вы позабудете о сроках своих лицензий, делегировав нам их сопровождение.</p>
-							<div class="price">7 777</div>
-							<a class="readmore">Узнать подробности</a>
+						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/index_04.jpg">
+							<div class="header">Регистрация СМИ</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
+   							<a class="readmore" href="/category/telephonic/">Подробнее</a>
 						</div>
+
+						<div class="text service4" data-image="<?php bloginfo('template_url'); ?>/images/index_05.jpg">
+							<div class="header">Продление и переоформление</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
+							<div class="price">7 777</div>
+							<a class="readmore" href="/prodlenie-litsenzij-svyazi/">Подробнее</a>
+						</div>
+
+						<div class="text service5" data-image="<?php bloginfo('template_url'); ?>/images/index_03.jpg">
+							<div class="header">Разрешения на эфирные частоты</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
+								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+							</p>
+							<div class="price">11 999</div>
+							<a class="readmore" href="/category/onair/">Подробнее</a>
+						</div>
+
 					</div>
 				</div>
 				<div class="s_bg"></div>
@@ -62,5 +74,5 @@
 			</section>
 
 			<div class="header_padding whois">
-				<div class=" arrow bounce" ></div>
+				<div class="arrow bounce"></div>
 			</div>

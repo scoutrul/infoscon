@@ -3,21 +3,14 @@
 <head>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
+	<title>ИНФОСВЯЗЬ КОНСАЛТИНГ / лицензии на услуги связи (регистрация, продление, переоформление)</title>
 
-	<title>ИНФОСВЯЗЬ КОНСАЛТИНГ</title>
+	<meta name="description" content="<?php echo get_post_meta($post->ID, 'description', true); ?>" />
+	<meta name="keywords" content="<?php echo get_post_meta($post->ID, 'keywords', true); ?>" />
+	
+	<?php $host = $_SERVER['REQUEST_URI']; ?>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.compatibility.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/jquery.transform2d.js"></script>
-
-
-
-<?php $host = $_SERVER['REQUEST_URI']; ?>
 
 </head>
 <body>
@@ -34,7 +27,7 @@
 				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="ИнфоСвязь Консалтинг" class="gohome">
 			</div>
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
-			<a class="order">Заказать лицензию</a>
+			<a class="order" id="freeCons">Вопросы?</a>
 		</section>
 	</header>
 
@@ -49,7 +42,7 @@
 <div class="main">
 
 
-	<?php if (!is_Home()) {
+	<?php if (!is_Home() && !is_404()) {
 		echo '<section class="breadcrumbs">';
 		yoast_breadcrumb('<div class="breadcrumbs__nav">','</div>');
 		echo '</section>';

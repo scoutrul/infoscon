@@ -18,9 +18,9 @@
 		<?php the_content(); ?>
 
 
+		<?php endwhile; endif; ?>
 
 	</div>
-<?php endwhile; endif; ?>
 </section> <!-- / PAGE -->
 
 

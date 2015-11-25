@@ -1,20 +1,17 @@
 <?php get_header(); ?>
 
 
-	<div class="feed">
 
-		<div class="catalog_h" style="height:100%;">
-			<h1>страница не найдена (ошибка 404)</h1>
-			<div>Lorem общественная организация, consectetur adipisicing elit. Odit, est за мир aliquam aliquid velit, rerum consectetur qui <a href="#">презентация</a>.<p>Facilis ad eum doloribus dolore blanditiis nihil reprehenderit, minus, consequatur aliquam praesentium explicabo veniam optio quos est. Quidem rem soluta quasi, inventore dignissimos non corrupti labore sit laborum, minima quo <a href="#">подробнее о нас</a> ratione.</p></div>
-			<div align=center><img src="http://uralvoice.com/sites/default/files/styles/slider/public/field/image/0_8486a_ca16f72c_xl.jpeg?itok=cvw_4ytO"></div>
-		</div>
+<section class="page404"> 
 
+			<h1>Cтраница не найдена (ошибка 404)</h1>
+			<div class="text">
+				<p>Вам может быть интересен <a href="http://infoscon.ru/uslugi/">раздел с нашими услугами</a>.</p>
+				<p>Либо начните с <a href="http://infoscon.ru">главной страницы</a>.</p>
+				<p><a href="http://infoscon.ru/sitemap/">Карта сайта</a></p>
+			</div>
 
-
-
-
-
-	</div> <!-- /feed -->
+</section> <!-- / PAGE -->
 	
 
 
