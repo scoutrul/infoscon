@@ -7,7 +7,7 @@
 
 		<nav class="nav-info">
 			<ul>
-				<div class="nav__title">Информация</div>
+				<div class="nav__title">Разделы</div>
 				<?php wp_nav_menu('menu=footer_menu_info&menu_class=&container=&'); ?>
 			</ul>
 		</nav>
@@ -18,6 +18,7 @@
 			</ul>
 		</nav>
 
+		<!-- contact block -->
 		<div class="contact_block_container">
 
 			<?php
@@ -26,8 +27,6 @@
 					the_content();
 				wp_reset_query(); 
 			?>
-
-
 
 			<div class="order" id="bottomForm">Заказать лицензию</div>
 		</div>
@@ -95,6 +94,8 @@
 
 <?php wp_footer(); ?>
 
+
+<a href="#" class="scrollToTop">^</a>
 
 
 </body>

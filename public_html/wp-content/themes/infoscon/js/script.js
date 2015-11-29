@@ -1,4 +1,24 @@
+$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$('.scrollToTop').css({"display":"none"});
+	
+	$(window).scroll(function(){
 
+		if ($(this).scrollTop() > 1000) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
 
 
 $(function() {
@@ -7,7 +27,8 @@ $(function() {
 
 
 
-	// replace fcking Post-header on sitemap page
+
+// sitemap page replace fcking Post-header 
 	if ($("#sitemap_posts > h3:contains('Записи')").length) {
 		$("#sitemap_posts > h3:contains('Записи')").css({
 			"display": "none"

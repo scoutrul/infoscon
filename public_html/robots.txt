@@ -1,3 +1,4 @@
-﻿User-agent: *
+﻿Host: infoscon.ru
+User-agent: *
 Disallow: /
-Host: infoscon.ru
+Allow: /sitemap/

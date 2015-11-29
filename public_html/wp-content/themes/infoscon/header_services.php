@@ -15,16 +15,14 @@
 						<div class="text service1" data-image="<?php bloginfo('template_url'); ?>/images/index_01.jpg">
 							<div class="header">Лицензии на услуги связи</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
-								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+								Лицензия на услуги связи — это документ, выдаваемый Роскомнадзором, необходимый для деятельности, связанной с возмездным предоставлением любых услуг связи на территории РФ. Это относится ко всем видам проводной и беспроводной связи, вещанию, а также к провайдерской деятельности в сети Интернет.
 							</p>
-							<div class="price">7 999</div>
-							<a class="readmore" href="/category/telematic/">Подробнее</a>
+							<div class="price">4 999</div>
+							<a class="readmore" href="/uslugi/">Список всех лицензий</a>
 						</div>
 
 						<div class="text service2"  data-image="<?php bloginfo('template_url'); ?>/images/index_02.jpg">
-							<div class="header">Вещательные лицензия</div>
+							<div class="header">Вещательные лицензии</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
