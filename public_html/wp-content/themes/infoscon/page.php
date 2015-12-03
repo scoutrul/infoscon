@@ -6,10 +6,6 @@
 					
 		<?php 
 			if (have_posts()): while (have_posts()): the_post(); 
-			$image_id = get_post_thumbnail_id();
-			$image_url = wp_get_attachment_image_src($image_id, 'large');
-			$image_url = $image_url[0];
-			$id = get_the_id();
 		?>
 
 

@@ -98,6 +98,7 @@
 		padding-bottom: 20px;
 		padding-top: 20px;
 		min-height: 140px;
+		width: 100%;
 		max-width: calc(49% - 20px);
 		display: inline-block;
 		vertical-align: text-top;
@@ -800,15 +801,17 @@ section.page {
 	-webkit-flex: 1 0 500px;
 	-ms-flex: 1 0 500px;
 	flex: 1 0 500px;
-	border: 0px solid #FFF;
-	border-top: 1px solid transparent;
-	margin: 10px;
+    margin: 10px 10px 50px;
 	padding: 0 40px 30px 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgb(190, 200, 212);
+    border-radius: 0 0 5px 5px;
+    transition: .1s ease;
 	
 }
 
 .page-services ul:hover {
-	background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 236, 114, 0.10);
 	border-top: 1px solid rgb(255, 236, 114);
 	border-radius: 0 0 5px 5px;
 }
@@ -1737,7 +1740,7 @@ form label {
     border: 0;
     padding: 20px;
     margin: auto;
-    width: 100%;
+    width: 580px;
     text-transform: uppercase;
     background-color: #088AEF;
     color: #FFF;
@@ -1769,13 +1772,13 @@ form label {
 
 .contactForm .h1,
 .contactForm .contactform-label {
-	font-size: 300%;
+	font-size: 200%;
 	color: #FFF;
 	font-weight: 600;
 	margin: 50px 0;
 	max-width: 600px;
 	text-align: center;
-	margin:auto;
+	margin:auto auto 20px auto;
 }
 .contactForm .h1 > div {
 	    font-weight: 300;

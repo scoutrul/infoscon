@@ -36,10 +36,9 @@
 							<?}
 
 		if(!in_category(1)) {
-
-		?>
-			<div class="post_order">Заказать</div>
-		<? } ?>
+			print '<div class="post_order">Заказать</div>';
+		}
+		 ?>
 
 	</div>
 
@@ -47,12 +46,29 @@
 
 	<div class="single_footer">
 
+	<?php
+		$query_info = new WP_Query('page_id=16'); 
+			while($query_info->have_posts()) $query_info->the_post(); 
+			the_content();
+		wp_reset_query(); 
+	?>
+
+		<?
+			if(!in_category(1)) {
+
+				echo 	'<div class="post_order" style="width:100%"><h4 style="color: #0488EE">Заказать оформление/продление: <br>',
+						the_title(),
+						'</h4></div>';
+			}
+		?>
+
 		<div class="single_footer_right">
 			<i>"Нам нравится то, что мы делаем,<br>
 			и <b>мы будем рады быть Вам полезными</b><br>
 			в развитии Вашего бизнеса."</i><br>
-			<b><i style="    font-size: 80%;">Гениральный директор "ИнфоСвязь Консалтинг"</i></b><br><br>
+			<b><i style="font-size: 80%;">Гениральный директор "ИнфоСвязь Консалтинг"</i></b><br><br>
 		</div>
+
 		<div class="single_footer_left">
 			<b>Контактный телефон:</b> 8 (985) 126-43-14 <br>
 			<b>E-mail:</b> <a href="mailto:info@infoscon.ru">info@infoscon.ru</a>
