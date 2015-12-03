@@ -829,7 +829,7 @@ section.page {
 
 .page-services ul li {
     margin: 0 auto 20px 20px;
-    color: #0A5D9E;
+    color: #000;
             -webkit-transition: all .01s;
                     transition: all .01s;
     border-left: 1px solid rgba(228, 205, 42, 0);
@@ -840,12 +840,17 @@ section.page {
 .page-services ul li a {
 	display: inline-block;
 	vertical-align: top;
+	color: #000;
+	text-decoration: underline;
+
 }
 
 .page-services ul li:hover {
     color: #FDDF00;
 }
-
+.page-services ul li a:hover {
+	    text-decoration: none;
+}
 /* //page */
 
 
