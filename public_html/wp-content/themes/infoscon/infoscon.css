@@ -36,7 +36,7 @@
 		height: 100%;
 		background-color: #141417;
 		background-image: url(images/raster.png);
-		color: #010203;
+		color: #2F2F2F;
 	}
 
 
@@ -134,7 +134,7 @@
 
 	h1,h2,h3,h4 {
 		font-family: 'Roboto Slab', serif;
-		color: #1D1D1D;
+		color: #5F5F5F;
 		padding: 30px 0 20px 0;
     	line-height: 155%;
 		margin: 0;
@@ -491,14 +491,11 @@ header .top_menu li.current-menu-item a:before {
 
 .breadcrumbs {
     font-size: 90%;
-    padding: 10px 0px 0 0px;
+    padding: 10px 0px 0 30px;
     margin: 10px auto;
 }
 	.breadcrumbs__nav {
     font-style: italic;
-
-	
-    margin-left: 30px;
 }
 	.breadcrumbs__nav a {
 		color: #1862BA;
@@ -803,7 +800,6 @@ section.page {
 	flex: 1 0 500px;
     margin: 10px 10px 50px;
 	padding: 0 40px 30px 40px;
-    background-color: rgba(0, 0, 0, 0.05);
     border-top: 1px solid rgb(190, 200, 212);
     border-radius: 0 0 5px 5px;
     transition: .1s ease;
@@ -989,7 +985,7 @@ section.post .post_order {
 	border-radius: 4px;
     font-size: 130%;
     font-weight: 300;
-    color: #6B7689;
+    color: #121212;
 /*	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	background-color: #F5DE50;
@@ -1867,6 +1863,7 @@ form label {
 
 /* 404 style */
 	.page404 {
+		text-align: right;
 		background-image: url(images/index_03.jpg);
 		background-size: cover;
 		height: 100%;
@@ -1890,6 +1887,7 @@ form label {
 	}
 
 
+
 		    .page404 h1 {
 		    	margin-top: auto;
 		    	color: #FFF;
@@ -1898,14 +1896,12 @@ form label {
 
 			.page404 .text {
 				margin: auto 0 auto auto;
-		    	text-shadow: 1px 1px 1px #000, -1px -1px 10px #041525;
-				font-size: 130%;
-}
+			}
 
 			.page404 .text a {
-				text-decoration: underline;
+				
 				color: #FFBF00;
-}
+			}
 
 
 
@@ -2340,4 +2336,5 @@ form label {
 {
 	color: #F2D92C;
 }
+
 

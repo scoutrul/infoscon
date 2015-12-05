@@ -42,10 +42,10 @@
 <div class="main">
 
 
-	<?php if (!is_Home() && !is_404()) {
+	<?php if (!is_Home() && !is_404() && !is_Page()){
 		echo '<section class="breadcrumbs">';
 		yoast_breadcrumb('<div class="breadcrumbs__nav">','</div>');
 		echo '</section>';
-
-	} ?>
+	}
+	?>
 
