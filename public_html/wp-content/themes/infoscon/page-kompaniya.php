@@ -32,17 +32,20 @@
 		<?php include('whywe.php');?>
 
 
+
 <section class="page"> 
 	<div class="container">
 
 		<?php the_content(); ?>
+<?php endwhile; endif; ?>
 
-
+		<?php include('pricetable.php'); ?>
 	</div>
 </section> <!-- / PAGE -->
 
 
-<?php endwhile; endif; ?>
+
+
 
 
 

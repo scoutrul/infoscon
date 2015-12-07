@@ -21,6 +21,7 @@ if ( is_home() ) {
 	
 <?
 	include('whywe.php');
+
 }?>			
 
 

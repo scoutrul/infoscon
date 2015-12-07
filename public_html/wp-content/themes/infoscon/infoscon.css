@@ -2338,3 +2338,18 @@ form label {
 }
 
 
+
+table.price {
+    border: 1px
+    solid #000;
+    width: 100%
+}
+
+table.price thead th,
+table.price tbody td {
+    border: 1px solid #CCC;
+}
+
+table.price tfoot th {
+    background-color: #CCC;
+}
