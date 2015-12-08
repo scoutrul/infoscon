@@ -2339,17 +2339,43 @@ form label {
 
 
 
+
 table.price {
-    border: 1px
-    solid #000;
+    border: 1px solid #CCC;
     width: 100%
 }
 
-table.price thead th,
-table.price tbody td {
+table.price th {
     border: 1px solid #CCC;
+
+}
+
+table.price td {
+    padding: 20px;
 }
 
 table.price tfoot th {
+    background-color: #CCC
+}
+
+table .price-header {
     background-color: #CCC;
+}
+
+table .price-header .h {
+    color: #000
+}
+table .price-section-in {
+    border: 1px solid #FFF;
+}
+table .price-section-in:nth-child(2n) {
+    background-color: #F5FAFF;
+    border: 0px solid #000;
+}
+
+table .price-section-in:nth-child(2n+1) {
+    background-color: #FBF6EF;
+}
+
+table .price-section-end {
 }
