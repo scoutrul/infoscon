@@ -16,6 +16,7 @@ if ( is_home() ) {
 				echo $queried_post->post_content;
 			?>
 
+			<?php include('pricetable.php'); ?>
 		</section>
 		
 	

@@ -39,7 +39,6 @@
 		<?php the_content(); ?>
 <?php endwhile; endif; ?>
 
-		<?php include('pricetable.php'); ?>
 	</div>
 </section> <!-- / PAGE -->
 

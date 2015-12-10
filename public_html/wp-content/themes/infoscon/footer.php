@@ -43,7 +43,7 @@
 	<div id="contactForm" class="contactForm">
 		<div class="orderclose">+</div>
 		<form action="#">
-			<div class="contactform-label">Вопросы?</div>
+			<div class="contactform-label">Чем мы можем быть Вам полезны?</div>
 			<label>Ваше имя:
 				<input type="text" placeholder="Представьтесь" id="form_name">
 			</label>
@@ -57,7 +57,7 @@
 	<!-- //Feedback form -->
 
 	<!-- order form -->
-	<div id="orderForm" class="contactForm">
+	<div id="PostOrderForm" class="contactForm">
 		<div class="orderclose">+</div>
 		<form action="#">
 			<div class="h1">Предварительный заказ:</div>

@@ -72,18 +72,18 @@ $(function() {
 	//the yellow order button
 
 		var orderText = $('.container > h1').text();
-		$('#orderForm .h1').append('<div>\"'+orderText+'\"</div>');
+		$('#PostOrderForm .h1').append('<div>\"'+orderText+'\"</div>');
 
 
 		$('.post_order').click(function(){
-			$('#orderForm form').removeClass('animated fadeOut zoomOut');
-			$('#orderForm').removeClass('animated slideInDown slideOutUp');
-			$('#orderForm').addClass('active animated slideInDown');
+			$('#PostOrderForm form').removeClass('animated fadeOut zoomOut');
+			$('#PostOrderForm').removeClass('animated slideInDown slideOutUp');
+			$('#PostOrderForm').addClass('active animated slideInDown');
 		});
 
 		$('.orderclose').click(function(){
-			$('#orderForm').removeClass('active animated slideInDown slideOutUp');
-			$('#orderForm').addClass('active animated slideOutUp');
+			$('#PostOrderForm').removeClass('active animated slideInDown slideOutUp');
+			$('#PostOrderForm').addClass('active animated slideOutUp');
 		});
 
 
