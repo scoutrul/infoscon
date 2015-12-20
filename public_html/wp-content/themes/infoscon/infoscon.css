@@ -2351,14 +2351,14 @@ form label {
 
 
 table.price {
-    border: 1px solid #CCC;
+    border: 1px solid #FFF;
     width: 100%;
     line-height: 150%;
     font-size: 90%;
 }
 
-table.price tfoot:last-child th{
-padding: 0;
+table.price tfoot:last-child th {
+	padding: 0;
 }
 
 table.price thead th {
@@ -2367,35 +2367,32 @@ table.price thead th {
 
 table.price td,
 table.price th {
-    padding: 30px;
     vertical-align: middle;
+    padding:10px;
 }
 
 
 table .price-header {
-    background-color: #CCC;
+    background: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.42) 0%,rgba(229, 229, 229, 0.63) 100%);
 }
 
 table .h {
     color: #121212;
-    padding: 10px 0;
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
 }
+
 
 table .price-section-in {
     border: 1px solid #FFF;
     transition: .1s ease-out;
     outline: 1px solid #CCC;
-    outline-offset: -3px;
+    outline-offset: -1px;
     opacity: .9;
 }
 table .price-section-in-excerpt {
-	padding: 0 20px 20px 30px!important;
-}
-
-table .price-section-in:hover {
-	outline: 1px solid #edce24;
-	outline-offset: -5px;
-	opacity: 1;
+	padding: 0 20px 20px 30px !important;
 }
 
 table .price-section-in:nth-child(2n) {
@@ -2411,6 +2408,11 @@ table .price-section-in th {
 	text-align: left;
 }
 
+
+.price-section-in tr:hover {
+	outline: 1px solid #FCC;
+}
+
 table .price-section-end {
 	height: 20px;
 	background-color: #FFF;
@@ -2423,7 +2425,13 @@ table .price-section-in-days {
 
 table .price-section-in-price {
 	font-weight: 300;
-	font-size: 160%;
 	white-space: nowrap;
+	text-align: center;
+	font-size: 120%;
+}
+table .price-section-in-price span {
+	font-weight: 500;
+}
+.price-section-in .price-section-in-num {
 	text-align: center;
 }

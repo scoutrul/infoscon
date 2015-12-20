@@ -1,4 +1,19 @@
-$(document).ready(function(){
+// price table
+$(function(){
+
+	$('.price-section-in-excerpt').hide();
+
+	$('.price-section-in-num').click(function() {
+		event.preventDefault();
+		$(this).parent().parent().children('.price-section-in-excerpt').toggle();
+		
+	});
+
+});
+
+//
+
+$(function(){
 	
 	//Check to see if the window is top if not then display button
 	$('.scrollToTop').css({"display":"none"});
