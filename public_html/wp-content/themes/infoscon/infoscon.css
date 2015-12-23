@@ -17,6 +17,9 @@
 	a {
 	    color:#1862BA;
 	}
+	a:active {
+		color:#edce24 !important;
+	}
 
 	*:focus {
 		outline:none
@@ -47,19 +50,18 @@
 
 	blockquote {
 		border-left: 3px solid rgba(242, 217, 44, 0.5);
-		padding: 10px 0 10px 45px;
+		padding: 10px 45px;
 		margin: 30px 0 40px 40px;
 		-webkit-transition: .3s;
 		transition: .3s;
-		font-size: 160%;
+		font-size: 130%;
 		line-height: 170%;
-		font-weight: 400;
-		color: #232323;
+		font-weight: 300;
+		color: #625A2E;
+		font-style: italic;
 	}
 
-			blockquote:hover {
-			    border-left: 3px solid #078AEF;
-			}
+
 
 	blockquote > * {
 		padding:0;
@@ -89,27 +91,25 @@
 		clear: both;
 	}
 
-	ol li {
+	.single_footer ol li  svg {
+		float:left
+	}
+
+	.single_footer ol li {
 		margin: 0 10px;
 		list-style: none;
 		line-height: 30px;
-		padding-left: 150px;
-		padding-right: 50px;
-		padding-bottom: 20px;
-		padding-top: 20px;
+padding:30px;
 		min-height: 140px;
 		width: 100%;
 		max-width: calc(49% - 20px);
 		display: inline-block;
 		vertical-align: text-top;
 		margin-bottom: 70px;
-		outline: 1px solid rgba(255, 255, 255, 0);
-		outline-offset: 55px;
 	}
 
-	ol li:before {
-		counter-increment: myCounter;
-		content: counter(myCounter);
+	.single_footer ol li:before {
+
 		color: white;
 		text-align: center;
 		line-height: 100px;
@@ -124,20 +124,14 @@
 		background-image: linear-gradient(180deg, #33A4FC, #0086ED);
 }
 
-			ol li:hover:before {
+			.single_footer ol li:hover:before {
 			   background-image: -webkit-linear-gradient(270deg, #F2D92C, #E9EB63);
 			   background-image: linear-gradient(180deg, #F2D92C, #E9EB63);
 			}
 
-		ol li:hover {
+		.single_footer ol li:hover {
 			background-color: rgba(0, 0, 0, 0.05);
-    		outline: 1px solid #FFF;
-		    outline-offset: 0;
-		    transition: 0.3s ease-out;
-		    -webkit-transition: 0.3s ease-out;
-		}
-		ol.index li:hover {
-			background-color: rgba(255, 255, 255, 0.05);
+    		border-radius: 5px;
 		}
 
 	h1,h2,h3,h4 {
@@ -954,7 +948,7 @@ section.whywe {
 	    	opacity: .8;
 	    	filter: alpha(opacity=80);
 	    	margin: 0 10px;
-	    	min-height: 210px;
+	    	min-height: 220px;
 	    	-webkit-transition: .3s ease-in-out;
 	    	        transition: .3s ease-in-out;
 	    	/* border-bottom: 3px solid rgba(255, 255, 255, 0); */
@@ -967,6 +961,7 @@ section.whywe {
 		}
 
 		ol.index li:hover p {
+	    	border-bottom: 3px solid #edce24;
 	    	color: #edce24;
 		}
 				ol.index li:hover p strong {
@@ -1054,10 +1049,7 @@ section.post .price-price {
     transition: .1s ease-in-out;
     color: #121212;
 }
-    section.post .price:hover .price-price {
-    	color: #f5de50;
 
-    }
  
 
 					section.post .price-price:after {
@@ -2349,7 +2341,8 @@ form label {
 	font-weight: 900;
 }
 
-.scrollToTop:hover {
+.scrollToTop:hover
+{
 	color: #F2D92C;
 }
 
@@ -2357,7 +2350,7 @@ form label {
 
 
 table.price {
-    border: 1px solid #CCC;
+    border: 1px solid #FFF;
     width: 100%;
     line-height: 150%;
     font-size: 90%;
@@ -2373,47 +2366,48 @@ table.price thead th {
 
 table.price td,
 table.price th {
-    padding: 30px;
     vertical-align: middle;
+    padding:10px;
+    background: rgba(255, 255, 255, 0);
 }
 
 
 table .price-header {
-    background-color: #CCC;
+    background: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.42) 0%,rgba(229, 229, 229, 0.63) 100%) !important;
 }
 
 table .h {
     color: #121212;
-    padding: 10px 0;
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
 }
+
 
 table .price-section-in {
     border: 1px solid #FFF;
+    transition: .1s ease-out;
     outline: 1px solid #CCC;
-    outline-offset: -3px;
+    outline-offset: -1px;
     opacity: .9;
 }
-
-table .price-section-in:hover {
-	opacity: 1;
+table .price-section-in-excerpt {
+	background: rgba(255, 255, 255, 0);
 }
 
 table .price-section-in:nth-child(2n) {
     background-color: #F5FAFF;
+    border: 0px solid #000;
 }
 
 table .price-section-in:nth-child(2n+1) {
-    background-color: #E9FAFD;
+    background-color: #FBF6EF;
 }
-
-table .price-section-in tr:first-child {
-	background-color: #CCC;
-}
-
 
 table .price-section-in th {
 	text-align: left;
 }
+
 
 table .price-section-end {
 	height: 20px;
@@ -2427,7 +2421,49 @@ table .price-section-in-days {
 
 table .price-section-in-price {
 	font-weight: 300;
-	font-size: 160%;
 	white-space: nowrap;
 	text-align: center;
+	font-size: 120%;
+}
+table .price-section-in-price span {
+	font-weight: 500;
+}
+.price-section-in .price-section-in-num {
+	text-align: center;
+}
+
+.price-section-more {
+	float: right;
+	padding: 15px 20px;
+}
+
+
+.price .price-section-excerpt {
+	padding-top: 30px;
+	padding-right: 30px;
+	line-height: 160%;
+}
+
+.price .price-section-more svg {
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	margin: 0 5px;
+	height: 20px;
+	fill: #336CAE;
+}
+
+.price .price-section-more:active svg,
+.price .price-section-more:active,
+.price-section-open:active a {
+	fill: #edce24;
+	color:#edce24;
+}
+
+.price .price-section-open {
+	cursor: pointer;
+}
+
+.price .price-section-in:hover tr{
+    background-color: rgba(157, 255, 79, 0.09);
 }

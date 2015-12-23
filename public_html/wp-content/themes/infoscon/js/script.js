@@ -1,4 +1,7 @@
-$(document).ready(function(){
+
+//
+
+$(function(){
 	
 	//Check to see if the window is top if not then display button
 	$('.scrollToTop').css({"display":"none"});
@@ -191,23 +194,7 @@ if($("#scroll-flag").length >= 1) {
 			$( window ).scroll(topScrollGo);
 
 
-		var whyweFunc = function() {
 
-			var topScroll = $(window).scrollTop();
-			var wHeight = $('.whywe').height();
-			var wOffset = $('.whywe').offset().top;
-			var velo = topScroll-wHeight;
-			var veloZ = wOffset-wHeight;
-			var veloDone = velo - veloZ;
-
-
-			if (topScroll >= veloZ) {
-				$('.whywe_bg').css({transform: 'translate3d(0px,'+ veloDone/3.35 +'px,0px)'});
-/*				console.log(veloDone);*/
-			}
-
-			
-		};$( window ).scroll(whyweFunc);
 
 
 

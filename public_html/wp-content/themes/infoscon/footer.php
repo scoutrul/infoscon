@@ -43,7 +43,7 @@
 	<div id="contactForm" class="contactForm">
 		<div class="orderclose">+</div>
 		<form action="#">
-			<div class="contactform-label">Чем мы можем быть Вам полезны?</div>
+			<div class="contactform-label">Задайте свой вопрос</div>
 			<label>Ваше имя:
 				<input type="text" placeholder="Представьтесь" id="form_name">
 			</label>
@@ -100,8 +100,6 @@
 
 </body>
 </html>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
 	<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 

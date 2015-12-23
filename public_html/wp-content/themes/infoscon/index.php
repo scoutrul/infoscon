@@ -17,13 +17,18 @@ if ( is_home() ) {
 			?>
 
 			<?php include('pricetable.php'); ?>
+<?
+	
+		$query_info = new WP_Query('page_id=16'); 
+			while($query_info->have_posts()) $query_info->the_post(); 
+			the_content();
+		wp_reset_query(); 
+	
+
+}?>			
 		</section>
 		
 	
-<?
-	include('whywe.php');
-
-}?>			
 
 
 
