@@ -526,7 +526,17 @@ header .top_menu li.current-menu-item a:before {
 		font-style: normal;
 }
 
-
+.breadcrumbs.bottom {
+	border-radius: 30px;
+	text-align: left;
+	padding: 20px;
+	font-size: 80%;
+}
+.breadcrumbs.bottom .breadcrumbs__nav {
+	width: 50%;
+	line-height: 140%;
+	margin: 30px 0;
+}
 
 /**/
 
@@ -1106,19 +1116,29 @@ section.post .price-price {
 }
 
 .service_catalog li .services_readmore {
-	float: right;
+	float: left;
 	color: #0187ED;
-	padding: 20px;
+	margin: 20px 0;
+	padding: 20px 0px;
 }
 
 
 .service_catalog li .services_days {
-	float:right;
-	padding: 20px;
+	float: right;
+	margin: 20px;
+	padding: 10px 20px;
 }
 .service_catalog li .services_price {
-	float:right;
-	padding: 20px;
+	float: right;
+	margin: 20px;
+	padding: 10px 20px;
+	border: 1px solid #DDD;
+	border-radius: 35px;
+}
+
+.service_catalog li .services_price span {
+	font-size: 120%;
+	font-weight: 600;
 }
 
 .service_catalog .title {

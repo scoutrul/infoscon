@@ -1,9 +1,20 @@
 
+				<?php 
+					if (!is_Home() && !is_404() && !is_Page()){
+						echo '<section class="breadcrumbs bottom">';
+						yoast_breadcrumb('<div class="breadcrumbs__nav">','</div>');
+						echo '</section>';
+					}
+				?>
+
+
 		</div> <!-- /main -->
+
 
 <!-- ФУТЕР -->
 <footer>
 	<section>
+
 
 		<nav class="nav-info">
 			<ul>

@@ -56,17 +56,19 @@
 		<?
 			if(!in_category(1)) {
 
-				echo 	'<div class="post_order" style="width:100%"><h4 style="color: #0488EE">Заказать оформление/продление: <br>',
+				echo 	'<div class="post_order" style="width:100%"><h4 style="color: #0488EE">Заказать оформление или продление: <br>',
 						the_title(),
 						'</h4></div>';
 			}
 		?>
 
 		<div class="single_footer_right">
+		<blockquote style="margin:0">
 			<i>"Нам нравится то, что мы делаем,<br>
 			и <b>мы рады быть полезными Вам</b><br>
 			в развитии бизнеса."</i><br>
-			<b><i style="font-size: 80%;">Гениральный директор "ИнфоСвязь Консалтинг"</i></b><br><br>
+			<i style="font-size: 80%;">Гениральный директор "ИнфоСвязь Консалтинг"</i><br><br>
+		</blockquote>	
 		</div>
 
 		<div class="single_footer_left">
