@@ -31,7 +31,12 @@
 			<div class="order" id="bottomForm">Заказать лицензию</div>
 		</div>
 
-		<section class="copyright">© Cайт компании "ИнфоСвязь Консалтинг", мы занимаемся лицензированием услуг связи. </section>
+		<section class="copyright">© Cайт компании "ИнфоСвязь Консалтинг", мы занимаемся лицензированием услуг связи.
+			<div>
+				<a href="http://infoscon.ru/sitemap/">Карта сайта</a>
+			</div>
+		</section>
+
 	</section>
 
 </footer>

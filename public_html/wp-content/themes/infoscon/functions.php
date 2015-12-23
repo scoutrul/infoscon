@@ -28,3 +28,5 @@ function my_css_attributes_filter( $var ) {
     );
     return is_array( $var ) ? array_intersect( $var, $allow ) : '';
 }
+
+

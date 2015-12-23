@@ -91,48 +91,69 @@
 		clear: both;
 	}
 
-	.single_footer ol li  svg {
-		float:left
+	ol.features_footer {
+		padding: 0;
 	}
 
-	.single_footer ol li {
-		margin: 0 10px;
+	ol.features_footer li:nth-child(4n+2),
+	ol.features_footer li:nth-child(4n-3) {
+		background-color: rgba(0, 0, 0, 0.05);
+		border:0;
+	}
+
+
+	ol.features_footer li {
 		list-style: none;
-		line-height: 30px;
-padding:30px;
-		min-height: 140px;
-		width: 100%;
-		max-width: calc(49% - 20px);
-		display: inline-block;
-		vertical-align: text-top;
-		margin-bottom: 70px;
+		    line-height: 30px;
+		    padding: 10px 60px;
+		    max-width: calc(50% - 60px);
+		    min-height: 360px;
+		    display: inline-block;
+		    vertical-align: text-top;
+		    margin: 20px;
+		    text-align: justify;
+		    border-radius: 5px;
+		    border: 1px solid rgba(0, 0, 0, 0.05);
 	}
 
-	.single_footer ol li:before {
+	ol.features_footer li:before {
+			color: white;
+			text-align: center;
+			line-height: 100px;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 20px;
+			top: 20px;
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+			background-image: -webkit-linear-gradient(270deg, #33A4FC, #0086ED);
+			background-image: linear-gradient(180deg, #33A4FC, #0086ED);
+	}
 
-		color: white;
-		text-align: center;
-		line-height: 100px;
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		left: 20px;
-		top: 20px;
-		-webkit-transition: .3s ease-in-out;
-		transition: .3s ease-in-out;
-		background-image: -webkit-linear-gradient(270deg, #33A4FC, #0086ED);
-		background-image: linear-gradient(180deg, #33A4FC, #0086ED);
-}
-
-			.single_footer ol li:hover:before {
+			ol.features_footer li:hover:before {
 			   background-image: -webkit-linear-gradient(270deg, #F2D92C, #E9EB63);
 			   background-image: linear-gradient(180deg, #F2D92C, #E9EB63);
 			}
 
-		.single_footer ol li:hover {
-			background-color: rgba(0, 0, 0, 0.05);
-    		border-radius: 5px;
-		}
+
+	ol.features_footer li svg {
+		float: left;
+		width: 160px;
+		height: 70px;
+		margin: 60px 0 30px 0;
+		fill: #313131;
+	}
+
+	ol.features_footer li:nth-child(2n) svg	{
+	    float:right;
+	}
+
+
+
+
+
+
 
 	h1,h2,h3,h4 {
 		font-family: 'Roboto Slab', serif;
@@ -980,6 +1001,7 @@ section.post .post_content {}
 
 section.post .price-text {}
 
+
 section.post .post_order {
 	margin: 100px auto;
 	line-height: 65px;
@@ -1005,6 +1027,11 @@ section.post .post_order:hover {
     text-shadow: none;
 	border: 1px solid #F5DE50;
 }
+
+		.post_order > * {
+		    padding: 10px;
+		}
+
 
 section.post .price {
     font-size: 200%;
@@ -1270,6 +1297,9 @@ footer {
 		    filter: alpha(opacity=70);
 		    -webkit-transition: 1s;
 		            transition: 1s;
+
+			 -webkit-flex-direction: column;
+			flex-direction: column;
 		
 }
 
@@ -2357,11 +2387,24 @@ table.price {
 }
 
 table.price tfoot:last-child th {
-	padding: 0;
+	padding: 40px;
 }
 
+table.price thead:first-child:after {
+    content: '';
+    display: table;
+    height: 30px;
+    width: 100%;
+    clear: both
+}
 table.price thead th {
-	padding: 10px;
+	color: #4A4A4A;
+	font-weight: 400;
+	background: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%,rgb(240, 240, 240) 100%);
+	font-size: 85%;
+	font-family: 'Roboto Slab',serif;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
 }
 
 table.price td,
@@ -2391,17 +2434,21 @@ table .price-section-in {
     outline-offset: -1px;
     opacity: .9;
 }
+table .price-section-in:hover {
+	opacity: 1;
+	background-color: rgba(246, 255, 217, 0.53) !important;
+}
+
 table .price-section-in-excerpt {
 	background: rgba(255, 255, 255, 0);
 }
 
 table .price-section-in:nth-child(2n) {
-    background-color: #F5FAFF;
-    border: 0px solid #000;
+	background-color: rgba(245, 245, 245, 0.53);
 }
 
 table .price-section-in:nth-child(2n+1) {
-    background-color: #FBF6EF;
+    
 }
 
 table .price-section-in th {
@@ -2434,7 +2481,7 @@ table .price-section-in-price span {
 
 .price-section-more {
 	float: right;
-	padding: 15px 20px;
+	padding: 15px 0 30px 20px;
 }
 
 
@@ -2465,5 +2512,5 @@ table .price-section-in-price span {
 }
 
 .price .price-section-in:hover tr{
-    background-color: rgba(157, 255, 79, 0.09);
+    background-color: rgba(255, 255, 255, 0.41);
 }

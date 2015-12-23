@@ -33,7 +33,7 @@ echo <<<END
 END;
 	?>
 
-			<?	$IDcatTab = 'cat='.$categoryTab->term_id;
+			<?	$IDcatTab = 'cat='.$categoryTab->term_id.'&showposts=-1';
 				query_posts($IDcatTab); 
 				while (have_posts()) : the_post(); ?>
 
@@ -80,7 +80,7 @@ END;
 echo '
 	<tfoot>
 		<tr>
-			<th colspan="3" class="price-section-end" style="font-size: 160%;">Внимание! Получите большую скидку при заказе двух и более лицензий!</th>
+			<th colspan="4" class="price-section-end" style="font-size: 160%;">Внимание! Получите большую скидку при заказе двух и более лицензий!</th>
 		</tr>
 	</tfoot>';
 ?>

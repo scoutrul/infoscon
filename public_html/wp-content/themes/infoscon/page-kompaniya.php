@@ -2,41 +2,39 @@
 
 <!-- О КОМАНИИ -->
 
-
 <?php get_header(); ?>
+
 
 
 		<?php 
 			if (have_posts()): while (have_posts()): the_post(); 
 		?>
-
+		<?php
+			$morestring = '<!--more-->';
+			$explode_content = explode( $morestring, $post->post_content );
+			$content_before = apply_filters( 'the_content', $explode_content[0] );
+			$content_after = apply_filters( 'the_content', $explode_content[1] );
+		?>
 <section class="page"> 
 	<div class="container">
 					
 
 
-		<h1 style="font-weight: 400;">«ИнфоСвязь Консалтинг» специализируется на оказании помощи компаниям в получении лицензий связи на всей территории РФ.</h1>
-		<blockquote>
-			<em>Компания «ИнфоСвязь Консалтинг» была основана в 2005 году. Основной целью компании является оперативная и профессиональная помощь региональным телерадиокомпаниям и операторам связи в успешном развитии бизнеса. Мы решаем весь спектр вопросов, связанных с лицензированием услуг связи и лицензий на вещание.</em>
-		</blockquote>
-
-		<h2>Какие лицензии связи нужны именно для Вашего бизнеса?</h2>
-		<ul>
-			<li>«ИнфоСвязь Консалтинг» оказывает помощь в оформлении всех документов, необходимых для получения лицензий для оказания услуги связи.</li>
-			<li>Если Вы не знаете КАКИЕ именно лицензии связи Вам нужны, просто позвоните нам, и наши специалисты бесплатно проконсультируют по всем документам, необходимым именно для Вашего бизнеса.</li>
-		</ul>
+	<? echo $content_before;?>
 		
 	</div>
 </section> <!-- / PAGE -->
 
-		<?php include('whywe.php');?>
 
+<?php include('whywe.php');?>
 
 
 <section class="page"> 
 	<div class="container">
 
-		<?php the_content(); ?>
+		
+
+	<? echo $content_after;?>
 <?php endwhile; endif; ?>
 
 	</div>
