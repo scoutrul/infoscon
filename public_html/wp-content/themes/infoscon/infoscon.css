@@ -91,6 +91,8 @@
 		clear: both;
 	}
 
+
+	ol.features_footer h2 {text-align: center}
 	ol.features_footer {
 		padding: 0;
 	}
@@ -1033,9 +1035,7 @@ section.post .post_order {
 }
 
 section.post .post_order:hover {          
-    color: #AEAEAE;
     text-shadow: none;
-	border: 1px solid #F5DE50;
 }
 
 		.post_order > * {
@@ -2399,6 +2399,23 @@ form label {
 
 
 
+.pricetable {
+	width: 240px;
+	height: 70px;
+	margin: auto;
+	line-height: 65px;
+	max-height: 65px;
+	text-align: center;
+	border-radius: 4px;
+	color: #FFF;
+	font-size: 150%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	background-image: linear-gradient(180deg, #96F794, #64C35E);
+	cursor: pointer;
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.5);	
+}
+
 table.price {
     border: 1px solid #FFF;
     width: 100%;
@@ -2420,7 +2437,6 @@ table.price thead:first-child:after {
 table.price thead th {
 	color: #4A4A4A;
 	font-weight: 400;
-	background: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%,rgb(240, 240, 240) 100%);
 	font-size: 85%;
 	font-family: 'Roboto Slab',serif;
 	letter-spacing: 0.09em;
@@ -2431,16 +2447,20 @@ table.price td,
 table.price th {
     vertical-align: middle;
     padding:10px;
-    background: rgba(255, 255, 255, 0);
+ 
+}
+
+table .price_thead tr {
+	background-color: #E6E6E6;
 }
 
 
 table .price-header {
-    background: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.42) 0%,rgba(229, 229, 229, 0.63) 100%) !important;
+	background-color: #F7EA94;
 }
 
 table .h {
-    color: #121212;
+    color: #525252;
     font-size: 14px;
     text-align: left;
     padding: 0;
@@ -2448,11 +2468,12 @@ table .h {
 
 
 table .price-section-in {
-    border: 1px solid #FFF;
-    transition: .1s ease-out;
-    outline: 1px solid #CCC;
-    outline-offset: -1px;
-    opacity: .9;
+	    transition: .1s ease-out;
+	    outline: 1px solid #F7EA94;
+	    outline-offset: -1px;
+	    opacity: .9;
+	    background-color: rgb(239, 239, 239);
+	
 }
 table .price-section-in:hover {
 	opacity: 1;

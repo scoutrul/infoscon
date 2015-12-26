@@ -75,7 +75,7 @@ $(function() {
 	//the yellow order button
 
 		var orderText = $('.container > h1').text();
-		$('#PostOrderForm .h1').append('<div>\"'+orderText+'\"</div>');
+		(orderText)? $('#PostOrderForm .h1').append('<div>\"'+orderText+'\"</div>'):'';
 
 
 		$('.post_order').click(function(){

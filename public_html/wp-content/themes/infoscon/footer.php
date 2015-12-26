@@ -76,14 +76,14 @@
 	<div id="PostOrderForm" class="contactForm">
 		<div class="orderclose">+</div>
 		<form action="#">
-			<div class="h1">Предварительный заказ:</div>
+			<div class="h1">Сделать заказ:</div>
 			<label>Ваше имя:
 				<input type="text" placeholder="Представьтесь" name="name" id="form_name_order">
 			</label>
 			<label>Контакты:
 				<input type="text" placeholder="e-mail" name="contact" id="form_contact_order">
 			</label>
-			<textarea name="" cols="30" rows="6" placeholder="Хотите что-нибудь добавить?" name="text" id="form_text_order"></textarea>
+			<textarea name="" cols="30" rows="6" placeholder="Что Вас интересует?" name="text" id="form_text_order"></textarea>
 			<button class="send_order">Заказать</button>
 		</form>
 	</div>

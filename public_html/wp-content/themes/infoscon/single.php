@@ -36,7 +36,7 @@
 							<?}
 
 		if(!in_category(1)) {
-			print '<div class="post_order">Заказать</div>';
+			print '<div class="post_order pricetable">Заказать</div>';
 		}
 		 ?>
 

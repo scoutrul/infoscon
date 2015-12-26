@@ -1,7 +1,7 @@
 
 <!-- 	<h2>Таблица услуг</h2> -->
 	<table class="price" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF">
-	<thead>
+	<thead class="price_thead">
 		<tr>
 			<th>#</th>
 			<th>Применение</th>
@@ -82,9 +82,18 @@ echo '
 		<tr>
 			<th colspan="4" class="price-section-end" style="font-size: 160%;">Внимание! Получите большую скидку при заказе двух и более лицензий!</th>
 		</tr>
+		<tr>
+			<th colspan="4">
+			';
+				if(!in_category(1)) {
+					print '<div class="post_order pricetable">Заказать</div>';
+				};
+echo			'</th>
+		</tr>
 	</tfoot>';
 ?>
 	</table>
+
 
 
 
