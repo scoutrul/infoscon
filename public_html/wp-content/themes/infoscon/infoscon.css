@@ -92,6 +92,10 @@
 	}
 
 
+
+
+	/* features */
+
 	ol.features_footer h2 {text-align: center}
 	ol.features_footer {
 		padding: 0;
@@ -115,7 +119,7 @@
 		    margin: 20px;
 		    text-align: justify;
 		    border-radius: 5px;
-		    border: 1px solid rgba(0, 0, 0, 0.05);
+		    border: 1px solid rgba(0, 0, 0, 0.10);
 	}
 
 	ol.features_footer li:before {
@@ -152,7 +156,14 @@
 	}
 
 
+	@media only screen and (max-width: 900px)  {
+		ol.features_footer li {
+			max-width: 100%;
+		}
 
+	}
+
+/* / features */
 
 
 
@@ -531,7 +542,7 @@ header .top_menu li.current-menu-item a:before {
 .breadcrumbs.bottom {
 	border-radius: 30px;
 	text-align: left;
-	padding: 20px;
+	padding: 150px 0 0 30px;
 	font-size: 80%;
 }
 .breadcrumbs.bottom .breadcrumbs__nav {
@@ -656,6 +667,7 @@ header .top_menu li.current-menu-item a:before {
 					color:#edce24;
 					font-size: 13px;
 					margin-left: 20px;
+					text-decoration: underline;
 				}
 
 				.services .menu ul {
@@ -2413,7 +2425,6 @@ form label {
 }
 
 table.price {
-    border: 1px solid #FFF;
     width: 100%;
     line-height: 150%;
     font-size: 90%;
@@ -2464,13 +2475,14 @@ table .h {
 
 
 table .price-section-in {
-	    transition: .1s ease-out;
-	    outline: 1px solid #F7EA94;
-	    outline-offset: -1px;
-	
+	transition: .1s ease-out;
+	outline: 1px solid rgba(247, 234, 148, 0.45);
+	outline-offset: -2px;
 }
-table .price-section-in:hover {
-	background-color: rgba(246, 255, 217, 0.53) !important;
+
+table .price-section-in:hover,
+table .price-section-in.active {
+	background-color: rgb(252, 255, 243) !important
 }
 
 table .price-section-in-excerpt {
@@ -2488,6 +2500,9 @@ table .price-section-in th {
 	text-align: left;
 }
 
+table tr.price-section-open a {
+	color: #232323;
+}
 
 table .price-section-end {
 	height: 20px;

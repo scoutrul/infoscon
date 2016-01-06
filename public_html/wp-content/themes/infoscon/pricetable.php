@@ -106,6 +106,7 @@ echo			'</th>
 			$('.price-section-open').click(function() {
 				event.preventDefault();
 				$(this).parent('.price-section-in').children('.price-section-in-excerpt').toggle();
+				$(this).parent('.price-section-in').toggleClass('active');
 				
 			});
 
