@@ -22,11 +22,9 @@
 						</div>
 
 						<div class="text service2"  data-image="<?php bloginfo('template_url'); ?>/images/index_02.jpg">
-							<div class="header">Вещательные лицензии</div>
+							<div class="header">Лицензия на осуществление телевизионного вещания</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
-								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+								Лицензия на осуществление вещания, "вещательная лицензия" предполагает возможность изготавливать и транслировать телевизионные и радиопрограммы. С 2012 года данная форма распространения СМИ называется «телеканал» и «радиоканал». Лицензиатом может быть только юридическое лицо, которое имеет право транслировать собственные или ретранслировать партнерские телевизионные программы (каналы). Для трансляции собственных программ необходимо получить свидетельство о регистрации средства массовой информации. Вещательная лицензия стороннего (партнерского) СМИ требует от Лицензиата договора о ретрансляции с соответствующим СМИ. Существуют лицензии на осуществление телевизионного вещания, радиовещания и универсальная лицензия.
 							</p>
 							<div class="price">8 000</div>
 							<a class="readmore" href="/category/telephonic/">Подробнее</a>
@@ -35,9 +33,7 @@
 						<div class="text service3" data-image="<?php bloginfo('template_url'); ?>/images/index_04.jpg">
 							<div class="header">Регистрация СМИ</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
-								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+								Если Вы планируете производить свои телевизионные или радиопрограммы, выпускать газету, журнал или зарегистрировать сайт, то Вам необходимо получить свидетельство о регистрации средства массовой информации. 
 							</p>
    							<a class="readmore" href="/category/telephonic/">Подробнее</a>
 						</div>
@@ -45,9 +41,7 @@
 						<div class="text service4" data-image="<?php bloginfo('template_url'); ?>/images/index_05.jpg">
 							<div class="header">Продление и переоформление</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
-								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+								Мы гарантируем быстрое и профессиональное продление или переоформление лицензий на услуги связи и лицензий на вещание (вещательных лицензий). Цены снижены!
 							</p>
 							<div class="price">7 777</div>
 							<a class="readmore" href="/prodlenie-litsenzij-svyazi/">Подробнее</a>
@@ -56,9 +50,7 @@
 						<div class="text service5" data-image="<?php bloginfo('template_url'); ?>/images/index_03.jpg">
 							<div class="header">Разрешения на эфирные частоты</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Similique quibusdam numquam possimus cumque ut et tenetur at culpa, 
-								reprehenderit ea officiis enim esse aliquid voluptas sint asperiores. Vitae quia, vero.
+								Быстрое и гарантированное получение и продление разрешений на использование частот. Разработка новых частот для целей радиовещания во ФГУП "ГРЧЦ" с дальнейшим оформлением полного пакета лицензий.
 							</p>
 							<div class="price">11 999</div>
 							<a class="readmore" href="/category/onair/">Подробнее</a>
