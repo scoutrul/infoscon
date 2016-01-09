@@ -21,16 +21,15 @@
 		<? if ($categoryTab->term_id!=1){ ?>
 
 	<?
-echo <<<END
+	echo '
 			<thead>
 				<tr>
 					<td class="price-header">&nbsp;</td>
 					<th colspan="3" class="price-header">
-						<h2 class="h">$categoryTab->name</h2>
+						<h2 class="h">' .$categoryTab->name. '</h2>
 					</th>
 				</tr>
-			</thead>
-END;
+			</thead>'
 	?>
 
 			<?	$IDcatTab = 'cat='.$categoryTab->term_id.'&showposts=-1';
@@ -80,7 +79,7 @@ END;
 echo '
 	<tfoot>
 		<tr>
-			<th colspan="4" class="price-section-end" style="font-size: 160%;">Внимание! Получите большую скидку при заказе двух и более лицензий!</th>
+			<th colspan="4" class="price-section-end" style="font-size: 160%;">Внимание! Получите скидку при заказе двух и более лицензий!</th>
 		</tr>
 		<tr>
 			<th colspan="4">
