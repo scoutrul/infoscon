@@ -2,7 +2,7 @@
 				<?php 
 					if (!is_Home() && !is_404() && !is_Page()){
 						echo '<section class="breadcrumbs bottom">';
-						yoast_breadcrumb('<div class="breadcrumbs__nav">','</div>');
+						yoast_breadcrumb('<div class="breadcrumbs__nav">Вы здесь: ','</div>');
 						echo '</section>';
 					}
 				?>

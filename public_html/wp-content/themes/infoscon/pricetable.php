@@ -1,14 +1,14 @@
 
 <!-- 	<h2>Таблица услуг</h2> -->
-	<table class="price" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF">
-	<thead class="price_thead">
-		<tr>
-			<th>#</th>
-			<th>Применение</th>
-			<th>Стоимость</th>
-			<th>Срок рассмотрения</th>
-		</tr>
-	</thead>
+	<table class="price" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+		<thead class="price_thead">
+			<tr>
+				<th>#</th>
+				<th>Применение</th>
+				<th>Стоимость</th>
+				<th>Срок рассмотрения</th>
+			</tr>
+		</thead>
 
 	<? 
 	$categories_in_table=get_categories('orderby=id&order=ASC');
@@ -83,11 +83,8 @@ echo '
 		</tr>
 		<tr>
 			<th colspan="4">
-			';
-				if(!in_category(1)) {
-					print '<div class="post_order pricetable">Заказать</div>';
-				};
-echo			'</th>
+				<div class="post_order pricetable">Заказать</div>
+			</th>
 		</tr>
 	</tfoot>';
 ?>
@@ -105,6 +102,7 @@ echo			'</th>
 			$('.price-section-open').click(function() {
 				event.preventDefault();
 				$(this).parent('.price-section-in').children('.price-section-in-excerpt').toggle();
+				$(this).parent('.price-section-in').toggleClass('active');
 				
 			});
 
