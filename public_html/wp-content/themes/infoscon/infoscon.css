@@ -1031,19 +1031,19 @@ section.post .post_order {
 	line-height: 65px;
 	text-align: center;
 	border-radius: 4px;
-    font-size: 130%;
-    font-weight: 300;
-    color: #505050;
+	font-size: 105%;
+	color: #FFFFFF;
 	cursor: pointer;
-	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.61);
 	width: 220px;
 	transition: .2s ease;
 	border: 1px solid #CCC;
-	font-weight: 400;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 section.post .post_order:hover {          
-    text-shadow: none;
+	text-shadow: none;
+	border: 0;
 }
 
 		.post_order > * {
@@ -1081,7 +1081,7 @@ section.post .single_footer_right {
 section.post .price-price {
     font-size: 250%;     
     font-weight: 600;     
-    margin-left: 40px;
+    margin: 0 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1113,35 +1113,40 @@ section.post .price-price {
 
 
 .service_catalog {
-    padding: 0;
-    list-style: none;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 
 .service_catalog li {
-    border-bottom: 1px solid #CCC;
-    padding: 0px 0 130px 0;
+	border-bottom: 1px solid #CCC;
+	padding: 0px 30px 130px 30px;
+	flex: 1 500px;
 }
 
 .service_catalog li .services_readmore {
-	float: left;
 	color: #0187ED;
-	margin: 20px 0;
-	padding: 20px 0px;
+	padding: 10px 0px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 
 .service_catalog li .services_days {
-	float: right;
-	margin: 20px;
 	padding: 10px 20px;
+	color: #ABABAB;
+	font-weight: 300;
+	border-radius: 35px;
+	float: left;
 }
 .service_catalog li .services_price {
 	float: right;
-	margin: 20px;
 	padding: 10px 20px;
-	border: 1px solid #DDD;
+	border: 1px solid #EDCF26;
 	border-radius: 35px;
+	color: #5C5C5C;
 }
 
 .service_catalog li .services_price span {
