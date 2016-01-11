@@ -51,7 +51,7 @@
 	blockquote {
 		border-left: 3px solid rgba(242, 217, 44, 0.5);
 		padding: 10px 45px;
-		margin: 30px 0 40px 40px;
+		margin: 30px 0 40px 0px;
 		-webkit-transition: .3s;
 		transition: .3s;
 		font-size: 130%;
@@ -2428,6 +2428,7 @@ table.price {
     width: 100%;
     line-height: 150%;
     font-size: 90%;
+    background: #FFF;
 }
 
 table.price tfoot:last-child th {
