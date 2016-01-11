@@ -50,7 +50,7 @@
 
 	blockquote {
 		border-left: 3px solid rgba(242, 217, 44, 0.5);
-		padding: 10px 45px;
+		padding: 0px 35px;
 		margin: 30px 0 40px 0px;
 		-webkit-transition: .3s;
 		transition: .3s;
@@ -2531,6 +2531,8 @@ table .price-section-in-price span {
 }
 .price-section-in .price-section-in-num {
 	text-align: center;
+	color: #336CAE;
+	text-decoration: underline;
 }
 
 .price-section-more {
