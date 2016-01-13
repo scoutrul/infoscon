@@ -2484,6 +2484,7 @@ table .price-section-in {
 	transition: .1s ease-out;
 	outline: 1px solid rgba(247, 234, 148, 0.45);
 	outline-offset: -2px;
+	background: rgb(254, 253, 243);
 }
 
 table .price-section-in:hover,
