@@ -14,9 +14,43 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
+
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+	var switchBlock = document.createElement('div');
+		switchBlock.setAttribute("id", "siteswitcher");
+		switchBlock.style.position = "fixed";
+		switchBlock.style.top = "50%";
+		switchBlock.style.width = "175px";
+		switchBlock.style.right = "-75px";
+		switchBlock.style.fontSize = "13px";
+		switchBlock.style.textAlign = "center";
+		switchBlock.style.transform = "rotate(90deg)";
+		switchBlock.style.zIndex = "111";
+
+		switchBlock.style.backgroundColor = '#E8E8E8';
+		switchBlock.style.padding = '5px 15px 10px';
+		switchBlock.style.borderBottomLeftRadius = '15px';
+		switchBlock.style.borderBottomRightRadius = '15px';
+
+
+	var link = document.createElement('a');
+		var url = "/license-pro.ru/";
+		
+		link.setAttribute("href", url);
+		link.innerHTML = "Старая версия сайта";
+
+		document.body.appendChild(switchBlock);
+		switchBlock.appendChild(link)
+
+});
+</script>
+
 </head>
 <body>
 	
+
 
 	<header>
 		<section class="header">

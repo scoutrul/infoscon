@@ -1,4 +1,4 @@
 ﻿Host: infoscon.ru
 User-agent: *
-Disallow: /
+Disallow: /license-pro.ru/
 Allow: /sitemap/

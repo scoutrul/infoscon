@@ -9,6 +9,39 @@
 * See COPYRIGHT.php for copyright notices and details.
 */
 
+
+document.addEventListener('DOMContentLoaded', function () {
+
+	var switchBlock = document.createElement('div');
+		switchBlock.setAttribute("id", "siteswitcher");
+		switchBlock.style.position = "fixed";
+		switchBlock.style.top = "50%";
+		switchBlock.style.width = "175px";
+		switchBlock.style.right = "-85px";
+		switchBlock.style.fontSize = "13px";
+		switchBlock.style.textAlign = "center";
+		switchBlock.style.transform = "rotate(90deg)";
+		switchBlock.style.zIndex = "111";
+
+		switchBlock.style.backgroundColor = '#B4FFA0';
+		switchBlock.style.padding = '5px 15px 10px';
+		switchBlock.style.borderBottomLeftRadius = '15px';
+		switchBlock.style.borderBottomRightRadius = '15px';
+
+
+	var link = document.createElement('a');
+		var url = "http://infoscon.ru/";
+		
+		link.setAttribute("href", url);
+		link.innerHTML = "Новая версия сайта";
+
+		document.body.appendChild(switchBlock);
+		switchBlock.appendChild(link)
+
+});
+
+
+
 /**
 * JCaption javascript behavior
 *
