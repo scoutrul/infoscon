@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /license$
+Disallow: /license/$
+Disallow: *news*
+Disallow: *order.php
+Disallow: *?start=*
+Disallow: *component*
+
+
+User-agent: Yandex
+Host: www.license-pro.ru
+Disallow: /license$
+Disallow: /license/$
+Disallow: *news*
+Disallow: *order.php
+Disallow: *?start=*
+Disallow: *component*
