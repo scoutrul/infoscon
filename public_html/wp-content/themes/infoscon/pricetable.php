@@ -3,8 +3,7 @@
 	<table class="price" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
 		<thead class="price_thead">
 			<tr>
-				<th>#</th>
-				<th>Применение</th>
+				<th colspan="2">Применение</th>
 				<th>Стоимость</th>
 				<th>Срок рассмотрения</th>
 			</tr>

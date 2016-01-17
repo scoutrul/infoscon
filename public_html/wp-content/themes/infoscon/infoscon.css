@@ -1,4 +1,18 @@
-﻿	/* main set */
+﻿	
+	/* delite after  */
+	#old_site {
+		position: absolute;
+		top: -6px;
+		left: 0;
+		font-size: 11px;
+		z-index: 11111;
+		padding: 0 10px;
+		border-bottom-right-radius: 10px;
+		background-color: rgba(25, 24, 23, 0.64);
+	}
+		#old_site a {color:#414152;}
+
+	/* main set */
 
 	* {
 	  	 box-sizing: border-box;
@@ -1135,7 +1149,7 @@ section.post .price-price {
 
 
 .service_catalog li .services_days {
-	padding: 10px 20px;
+	padding: 10px 20px 0 0;
 	color: #ABABAB;
 	font-weight: 300;
 	border-radius: 35px;
