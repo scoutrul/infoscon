@@ -1,8 +1,4 @@
 			<section class="services" id="scroll-flag">
-
-
-			<div id="old_site"><a href="/license-pro.ru/">Старая версия сайта</a></div>
-
 			
 				<div class="container">
 					<div class="menu">
