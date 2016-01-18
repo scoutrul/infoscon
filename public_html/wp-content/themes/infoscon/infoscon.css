@@ -1,5 +1,12 @@
-﻿	
-	/* delite after  */
+﻿	/* delite after  30/02 */
+
+	@media only screen and (max-width: 600px){
+		
+	#old_site {
+			display: none;
+		}
+
+	}
 	#old_site {
 		position: fixed;
 		top: 50%;
@@ -7,7 +14,9 @@
 		right: -75px;
 		font-size: 13px;
 		text-align: center;
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		    -ms-transform: rotate(90deg);
+		        transform: rotate(90deg);
 		z-index: 111;
 		padding: 0px 15px 5px;
 		border-bottom-left-radius: 15px;
@@ -16,7 +25,7 @@
 		border: 1px solid rgba(236, 236, 236, 0.49);
 		background-color: rgba(25, 24, 23, 0.23);
 	}
-		#old_site a {    color: #8B8B8B;}
+		#old_site a {color: #8B8B8B;}
 
 	/* main set */
 
@@ -98,7 +107,7 @@
 
 	ol {
 		counter-reset: myCounter;
-		margin: 20px 30px 60px 20px;
+		margin: 20px 30px 60px 30px;
 		padding-left: 0px;
 		clear: both;
 	}
@@ -180,7 +189,11 @@
 		ol.features_footer li {
 			max-width: 100%;
 		}
-
+	}
+	@media only screen and (max-width: 500px)  {
+		ol.features_footer li {
+			padding: 10px 20px;
+		}
 	}
 
 /* / features */
@@ -562,7 +575,7 @@ header .top_menu li.current-menu-item a:before {
 .breadcrumbs.bottom {
 	border-radius: 30px;
 	text-align: left;
-	padding: 150px 0 0 30px;
+	/*padding: 150px 0 0 30px;*/
 	font-size: 80%;
 }
 .breadcrumbs.bottom .breadcrumbs__nav {
@@ -617,7 +630,6 @@ header .top_menu li.current-menu-item a:before {
 		            transition: scale .1s, margin .0s;
 		    -webkit-animation: bright 30s infinite;
 		    animation: bright 30s infinite;
-		
 		    background-color: #131518;
 }
 				.services .s_bg:after {
@@ -628,11 +640,7 @@ header .top_menu li.current-menu-item a:before {
 					position: absolute;
 					background: -webkit-linear-gradient(286deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35));
 					background: linear-gradient(164deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.35)); 
-
-				
 					opacity: .1; 
-
-				
 					filter: alpha(opacity=10);
 }
 				.services .s_bg:before {
@@ -795,7 +803,6 @@ header .top_menu li.current-menu-item a:before {
 				    cursor: pointer;  
 				    font-size: 14px;  
 				    letter-spacing: 0.1em;
-				    float: left;
 				    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 				    border-bottom: 1px solid #33A4FC;
 				}
@@ -2048,8 +2055,6 @@ form label {
 
 @media only screen and (max-width: 880px) { 
 
-
-
 	.services .info .readmore {
 		width:200px !important;
 	}
@@ -2291,6 +2296,46 @@ form label {
 
 }
 
+
+/*  iphones */
+
+@media only screen and (max-width: 480px) {
+
+	section {
+		padding: 10px;
+	}
+
+	footer {
+		height: 800px;
+		min-height: 800px;
+	}
+
+	footer .order {
+		width: 200px;
+	}
+
+	ol.features_footer {
+		margin: 20px 10px;
+	}
+
+	
+	ol.features_footer li {
+		margin: 10px 0;
+	}
+	ol.features_footer li svg {
+		float: none !important;
+		margin: auto !important;
+		display: block;
+	}
+
+
+	table.price td, table.price th {
+		padding: 5px;
+	}
+
+
+}
+
 /* *********************************** */
 
 
@@ -2429,6 +2474,14 @@ form label {
 	color: #F2D92C;
 }
 
+
+@media only screen and (max-width: 480px) {
+	.scrollToTop{
+		padding: 10px;		
+		bottom: 75px;
+	}
+
+}
 
 
 

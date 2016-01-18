@@ -111,23 +111,49 @@
 <?php wp_footer(); ?>
 
 
-<a href="#" class="scrollToTop">^</a>
-
+	<a href="#" class="scrollToTop">^</a>
 
 </body>
 </html>
 
-	<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 
-	<style>
-			/*  imports */
-		@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=cyrillic);
-		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
-			/* /imports */
-	</style>
+<script>		
+ document.addEventListener('DOMContentLoaded', function () {		
+ 		
+ 	var switchBlock = document.createElement('div');		
+ 		switchBlock.setAttribute("id", "old_site");		
+ 		
+ 		
+ 	var link = document.createElement('a');		
+ 		var url = "/license-pro.ru/";		
+ 				
+ 		link.setAttribute("href", url);		
+ 		link.innerHTML = "Старая версия сайта";		
+ 		
+ 		document.body.appendChild(switchBlock);		
+ 		switchBlock.appendChild(link)		
+ });		
+ </script>
 
+
+
+
+
+<!-- smooth scroll -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+
+<style>
+		/*  imports */
+	@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=cyrillic);
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+		/* /imports */
+</style>

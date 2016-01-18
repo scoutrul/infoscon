@@ -61,7 +61,7 @@
 						'</h4></div>';
 			}
 		?>
-
+<!-- 
 		<div class="single_footer_right">
 		<blockquote style="margin:0">
 			<i>"Нам нравится то, что мы делаем,<br>
@@ -74,7 +74,7 @@
 		<div class="single_footer_left">
 			<b>Контактный телефон:</b> 8 (985) 126-43-14 <br>
 			<b>E-mail:</b> <a href="mailto:info@infoscon.ru">info@infoscon.ru</a>
-		</div>
+		</div> -->
 	</div>
 </section>
 

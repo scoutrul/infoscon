@@ -10,32 +10,13 @@
 	
 	<?php $host = $_SERVER['REQUEST_URI']; ?>
 
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/infoscon.css">
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
 
-	<script>		
-	 document.addEventListener('DOMContentLoaded', function () {		
-	 		
-	 	var switchBlock = document.createElement('div');		
-	 		switchBlock.setAttribute("id", "old_site");		
-	 		
-	 		
-	 	var link = document.createElement('a');		
-	 		var url = "/license-pro.ru/";		
-	 				
-	 		link.setAttribute("href", url);		
-	 		link.innerHTML = "Старая версия сайта";		
-	 		
-	 		document.body.appendChild(switchBlock);		
-	 		switchBlock.appendChild(link)		
-	 });		
-	 </script>
 
 </head>
 <body>
-	
+
+
 
 
 	<header>

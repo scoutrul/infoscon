@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		switchBlock.style.fontSize = "13px";
 		switchBlock.style.textAlign = "center";
 		switchBlock.style.transform = "rotate(90deg)";
+		switchBlock.style.webkitTransform = "rotate(90deg)";
 		switchBlock.style.zIndex = "111";
 
 		switchBlock.style.backgroundColor = '#B4FFA0';
