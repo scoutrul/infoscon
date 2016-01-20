@@ -5,7 +5,7 @@
 			<tr>
 				<th colspan="2">Применение</th>
 				<th>Стоимость</th>
-				<th>Срок рассмотрения</th>
+				<th>Сроки</th>
 			</tr>
 		</thead>
 
@@ -39,7 +39,7 @@
 
 					<tr class="price-section-open">
 						<td class="price-section-in-num"><?$num++; print $num;?></td>
-						<td><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
+						<td class="price-section-in-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
 						<td class="price-section-in-price"><? echo (get_post_meta($post->ID, 'price', true)) ? 'от <span>'.get_post_meta($post->ID, 'price', true).'</span> руб.' : "-" ?></td>
 						<td class="price-section-in-days"><? echo (get_post_meta($post->ID, 'days', true)) ? '<span>'.get_post_meta($post->ID, 'days', true).'</span> дней' : "-"; ?></td>
 					</tr>

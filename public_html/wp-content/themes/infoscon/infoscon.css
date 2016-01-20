@@ -2327,12 +2327,6 @@ form label {
 		display: block;
 	}
 
-
-	table.price td, table.price th {
-		padding: 5px;
-	}
-
-
 }
 
 /* *********************************** */
@@ -2483,6 +2477,10 @@ form label {
 }
 
 
+/*price table*/
+
+
+
 
 .pricetable {
 	width: 240px;
@@ -2498,7 +2496,8 @@ form label {
 	letter-spacing: 0.1em;
 	background-image: linear-gradient(180deg, #96F794, #64C35E);
 	cursor: pointer;
-	text-shadow: 0px 0px 1px rgba(0,0,0,0.5);	
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+	/*it is a button*/
 }
 
 table.price {
@@ -2639,4 +2638,24 @@ table .price-section-in-price span {
 
 .price .price-section-in:hover tr{
     background-color: rgba(255, 255, 255, 0.41);
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.price-section-in{
+		font-size: 80%;
+	}
+	table.price td, table.price th {
+		padding: 5px !important;
+	}
+	.price_thead {
+		font-size: 70%;
+	}
+
+	thead.price_thead th,
+	thead.price_thead td {
+		padding: 0px !important;
+	}
+
 }
