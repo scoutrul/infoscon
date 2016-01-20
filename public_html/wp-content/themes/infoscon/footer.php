@@ -153,7 +153,11 @@
 
 <style>
 		/*  imports */
-	@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=cyrillic);
-	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+	@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic);
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=cyrillic);
 		/* /imports */
+	@font-face {
+	  font-family: 'Roboto Slab', 'Open Sans';
+	  font-display: fallback;
+	 }
 </style>

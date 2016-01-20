@@ -1,12 +1,11 @@
 ﻿	/* delite after  30/02 */
 
 	@media only screen and (max-width: 600px){
-		
-	#old_site {
-			display: none;
-		}
-
+		#old_site {
+				display: none;
+			}
 	}
+
 	#old_site {
 		position: fixed;
 		top: 50%;
@@ -2608,26 +2607,23 @@ table .price-section-in-price span {
 	color: #336CAE;
 	text-decoration: underline;
 }
-
-.price-section-more {
-	float: right;
-	padding: 15px 0 30px 20px;
-}
-
-
 .price .price-section-excerpt {
 	padding-top: 30px;
 	padding-right: 30px;
 	line-height: 160%;
 }
 
+.price-section-more {
+	float: left;
+}
+
 .price .price-section-more svg {
 	display: inline-block;
 	vertical-align: bottom;
-	float: right;
-	margin: 0 5px;
+	float: left;
 	height: 20px;
 	fill: #336CAE;
+	margin-right: 5px;
 }
 
 .price .price-section-more:active svg,
