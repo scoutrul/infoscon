@@ -77,7 +77,7 @@
 	}
 
 	blockquote {
-		border-left: 3px solid rgba(242, 217, 44, 0.5);
+		border-left: 3px solid rgb(248, 235, 149);
 		padding: 0px 35px;
 		margin: 30px 0 40px 0px;
 		-webkit-transition: .3s;
@@ -85,7 +85,7 @@
 		font-size: 130%;
 		line-height: 170%;
 		font-weight: 300;
-		color: #625A2E;
+		color: #232323;
 		font-style: italic;
 	}
 
@@ -2511,10 +2511,13 @@ table.price tfoot:last-child th {
 	padding: 40px;
 }
 
-table.price thead:first-child:after {
+table.price thead {
+
+}
+table.price thead:after {
     content: '';
     display: table;
-    height: 30px;
+    height: 20px;
     width: 100%;
     clear: both
 }
@@ -2544,18 +2547,18 @@ table .price-header {
 }
 
 table .h {
-    color: #525252;
+    color: #1B1B1B;
     font-size: 14px;
     text-align: left;
     padding: 0;
+    font-weight: 600;
 }
 
 
 table .price-section-in {
 	transition: .1s ease-out;
-	outline: 1px solid rgba(247, 234, 148, 0.45);
+	outline: 1px solid rgba(185, 185, 185, 0.45);
 	outline-offset: -2px;
-	background: rgb(254, 253, 243);
 }
 
 table .price-section-in:hover,

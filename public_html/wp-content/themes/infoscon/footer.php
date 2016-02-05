@@ -142,8 +142,7 @@
 
 
 
-<!-- smooth scroll -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!-- smooth scroll --><script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
 <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
