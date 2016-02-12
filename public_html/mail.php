@@ -1,6 +1,8 @@
 <?php     
 
 $mail_admin = 'scoutrul@mail.ru';
+$mail_kostya = 'runner10@yandex.ru';
+
 
 // Assigning data from the $_POST array to variables    
 $name = $_POST['name'];     
@@ -29,6 +31,7 @@ $headers .= 'From: '.$name.' <'.$mail.'>' . "\r\n" .
 
 
 $mail_sent = mail($mail_admin, $subject, $body_message, $headers);         
+$mail_sent = mail($mail_kostya, $subject, $body_message, $headers);         
 
 header("Location: /#sent");
 
