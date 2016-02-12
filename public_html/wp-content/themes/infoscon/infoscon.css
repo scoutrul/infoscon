@@ -2582,7 +2582,7 @@ table .price-section-in th {
 }
 
 table tr.price-section-open a {
-	color: #232323;
+	text-decoration: underline;
 }
 
 table .price-section-end {
