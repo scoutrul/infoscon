@@ -1,6 +1,6 @@
 <?php     
 
-$mail_admin = 'scoutrul@mail.ru';
+$mail_admin = 'info@infoscon.ru';
 
 // Assigning data from the $_POST array to variables    
 $contact_org = $_POST['contact_org'];     

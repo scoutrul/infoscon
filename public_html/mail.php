@@ -1,7 +1,6 @@
 <?php     
 
-$mail_admin = 'scoutrul@mail.ru';
-$mail_kostya = 'runner10@yandex.ru';
+$adress = 'info@infoscon.ru';
 
 
 // Assigning data from the $_POST array to variables    
@@ -28,10 +27,8 @@ $headers .= 'From: '.$name.' <'.$mail.'>' . "\r\n" .
  'Reply-To: <'.$mail.'>' . "\r\n" .
  'X-Mailer: PHP/' . phpversion();
 
-
-
-$mail_sent = mail($mail_admin, $subject, $body_message, $headers);         
-$mail_sent = mail($mail_kostya, $subject, $body_message, $headers);         
+       
+$mail_sent = mail($adress, $subject, $body_message, $headers);         
 
 header("Location: /#sent");
 
