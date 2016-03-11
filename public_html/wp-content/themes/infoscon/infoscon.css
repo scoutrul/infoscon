@@ -1148,9 +1148,16 @@ section.post .price-price {
 
 .service_catalog li {
 	border-bottom: 1px solid #CCC;
-	padding: 0px 30px 130px 30px;
+	border-left: 1px solid #CCC;
+	padding: 80px 70px 60px 30px;
 	flex: 1 500px;
+	margin: 0 0px 0 -30px;
+	transition: .1s ease-out;
 }
+.service_catalog li:hover {
+	border-color: #EDCF26;
+}
+
 
 .service_catalog li .services_readmore {
 	color: #0187ED;
@@ -1170,9 +1177,13 @@ section.post .price-price {
 .service_catalog li .services_price {
 	float: right;
 	padding: 10px 20px;
-	border: 1px solid #EDCF26;
 	border-radius: 35px;
 	color: #5C5C5C;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.service_catalog li:hover .services_price{
+	border: 1px solid #EDCF26;
 }
 
 .service_catalog li .services_price span {
@@ -1181,8 +1192,10 @@ section.post .price-price {
 }
 
 .service_catalog .title {
-    color: #0065B3;
-    margin: 0;
+	color: #0065B3;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
 }
 
 .service_catalog .title a:hover {
