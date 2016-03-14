@@ -124,30 +124,35 @@
 
 	/* features */
 
-	ol.features_footer h2 {text-align: center}
+	ol.features_footer h2 {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
 	ol.features_footer {
 		padding: 0;
+	}
+	ol.features_footer strong {
+		font-weight: 500;
 	}
 
 	ol.features_footer li:nth-child(4n+2),
 	ol.features_footer li:nth-child(4n-3) {
-		background-color: rgba(0, 0, 0, 0.05);
-		border:0;
+		/*шахматы*/
 	}
 
 
 	ol.features_footer li {
 		list-style: none;
-		    line-height: 30px;
-		    padding: 10px 60px;
-		    max-width: calc(50% - 60px);
-		    min-height: 360px;
-		    display: inline-block;
-		    vertical-align: text-top;
-		    margin: 20px;
-		    text-align: justify;
-		    border-radius: 5px;
-		    border: 1px solid rgba(0, 0, 0, 0.10);
+		line-height: 30px;
+		padding: 10px 60px;
+		max-width: calc(50% - 60px);
+		min-height: 360px;
+		display: inline-block;
+		vertical-align: text-top;
+		margin: 20px;
+		text-align: justify;
+		font-weight: 300;
 	}
 
 	ol.features_footer li:before {
@@ -173,10 +178,10 @@
 
 	ol.features_footer li svg {
 		float: left;
-		width: 160px;
-		height: 70px;
+		width: 140px;
+		height: 50px;
 		margin: 60px 0 30px 0;
-		fill: #313131;
+		fill: #4C4C4C;
 	}
 
 	ol.features_footer li:nth-child(2n) svg	{
