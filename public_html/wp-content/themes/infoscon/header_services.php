@@ -1,4 +1,4 @@
-			<section class="services" id="scroll-flag">
+			<section class="services off" id="scroll-flag">
 			
 				<div class="container">
 					<div class="menu">
@@ -41,7 +41,7 @@
    							<a class="readmore" href="/registratsiya-i-pereregistratsiya-smi/">Подробнее об услуге регистрации СМИ</a>
 						</div>
 
-						<div class="text service4" data-image="<?php bloginfo('template_url'); ?>/images/index_05.jpg">
+						<div class="text service4" data-image="<?php bloginfo('template_url'); ?>/images/index_055.jpg">
 							<div class="header">Продление и переоформление</div>
 							<p>
 								Мы гарантируем быстрое и профессиональное продление или переоформление лицензий на услуги связи и лицензий на вещание (вещательных лицензий). Цены снижены!
@@ -66,6 +66,8 @@
 
 			</section>
 
-			<div class="header_padding whois">
-				<div class="arrow bounce"></div>
+			<div class="header_padding toprice">
+				<div class="arrow bounce">
+					<div>Основные услуги</div>
+				</div>
 			</div>

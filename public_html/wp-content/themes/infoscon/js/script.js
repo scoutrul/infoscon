@@ -28,11 +28,6 @@ $(function(){
 
 $(function() {
 
-
-
-
-
-
 // sitemap page replace fcking Post-header 
 	if ($("#sitemap_posts > h3:contains('Записи')").length) {
 		$("#sitemap_posts > h3:contains('Записи')").css({
@@ -53,25 +48,16 @@ $(function() {
 // open forms
 
 	//the consultation form
-		$('#freeCons').click(function(){
-			$('#contactForm form').removeClass('animated fadeOut zoomOut');
-			$('#contactForm').removeClass('animated slideInDown slideOutUp');
+		$('#freeCons, #bottomForm, #feedback_me').click(function(){
+			// $('#contactForm form').removeClass('animated fadeOut zoomOut');
+			$('#contactForm').removeClass('animated slideInDown slideOutDown');
 			$('#contactForm').addClass('active animated slideInDown');
+			$('.deshevle').hide();
+			console.log('click!')
 		});
 
 
-	//the consultation form
-		$('#bottomForm').click(function(){
-			$('#contactForm form').removeClass('animated fadeOut zoomOut');
-			$('#contactForm').removeClass('animated slideInDown slideOutUp');
-			$('#contactForm').addClass('active animated slideInDown');
-		});
 
-	// close form
-		$('.orderclose').click(function(){
-			$('#contactForm').removeClass('active animated slideInDown slideOutUp');
-			$('#contactForm').addClass('active animated slideOutUp');
-		});
 
 
 	//the yellow order button
@@ -81,16 +67,28 @@ $(function() {
 
 
 		$('.post_order').click(function(){
-			$('#PostOrderForm form').removeClass('animated fadeOut zoomOut');
-			$('#PostOrderForm').removeClass('animated slideInDown slideOutUp');
+			// $('#PostOrderForm form').removeClass('animated fadeOut zoomOut');
+			$('#PostOrderForm').removeClass('animated slideInDown slideOutDown');
 			$('#PostOrderForm').addClass('active animated slideInDown');
+			$('.deshevle').hide();
 		});
 
-		$('.orderclose').click(function(){
-			$('#PostOrderForm').removeClass('active animated slideInDown slideOutUp');
-			$('#PostOrderForm').addClass('active animated slideOutUp');
+
+	// close forms
+
+		//single.php
+		$('#PostOrderForm .orderclose').click(function(){
+			$('#PostOrderForm').removeClass('active animated slideInDown slideOutDown');
+			$('#PostOrderForm').addClass('active animated slideOutDown');
+			$('.deshevle').show();
 		});
 
+		//fotm.php
+		$('#contactForm .orderclose').click(function(){
+			$('#contactForm').removeClass('active animated slideInDown slideOutDown');
+			$('#contactForm').addClass('active animated slideOutDown');
+			$('.deshevle').show();
+		});
 
 		 
 		// the yellow order button in the post service page
@@ -164,10 +162,12 @@ $(function() {
 				if(xmenuToggle === true) {
 					$('header').addClass('mobile');
 					xmenuToggle = false;
+					$('.deshevle').hide();
 				}
 				else {
 					$('header').removeClass('mobile');
 					xmenuToggle = true;
+					$('.deshevle').show();
 				}
 		});
 
@@ -176,10 +176,21 @@ $(function() {
 
 // scroll's href
 
-		$(".whois").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".about").offset().top
-		    }, 500);
+		// $(".toprice").click(function() {
+		//     $('html, body').animate({
+		//         scrollTop: $(".priceheader").offset().top
+		//     }, 500);
+		// });
+		var servToggle = true;
+		$(".toprice").click(function() {
+			if(servToggle === true) {
+		   		$('.services').removeClass('off').addClass('on');
+		   		servToggle = false;
+			}
+			else {
+		   		$('.services').removeClass('on').addClass('off');
+		   		servToggle = true;
+			}
 		});
 
 

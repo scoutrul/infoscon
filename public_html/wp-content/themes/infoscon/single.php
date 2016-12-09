@@ -36,7 +36,8 @@
 							<?}
 
 		if(!in_category(1)) {
-			print '<div class="post_order pricetable">Заказать</div>';
+			print '<div class="post_order pricetable">Подробнее</div><br><br><br>
+			<div align=center>Информационная линия: +7(985) 126-43-14</div><br><br>';
 		}
 		 ?>
 
@@ -46,38 +47,17 @@
 
 	<div class="single_footer">
 
-	<?php
-		$query_info = new WP_Query('page_id=16'); 
-			while($query_info->have_posts()) $query_info->the_post(); 
-			the_content();
-		wp_reset_query(); 
-	?>
+	<?php include('steps.php');?>
 
-		<?
-			if(!in_category(1)) {
 
-				echo 	'<div class="post_order" style="width:100%"><h4 style="color: #0488EE">Заказать оформление или продление: <br>',
-						the_title(),
-						'</h4></div>';
-			}
-		?>
-<!-- 
-		<div class="single_footer_right">
-		<blockquote style="margin:0">
-			<i>"Нам нравится то, что мы делаем,<br>
-			и <b>мы рады быть полезными Вам</b><br>
-			в развитии бизнеса."</i><br>
-			<i style="font-size: 80%;">Гениральный директор "ИнфоСвязь Консалтинг"</i><br><br>
-		</blockquote>	
-		</div>
 
-		<div class="single_footer_left">
-			<b>Контактный телефон:</b> 8 (985) 126-43-14 <br>
-			<b>E-mail:</b> <a href="mailto:info@infoscon.ru">info@infoscon.ru</a>
-		</div> -->
+
+
+		<?php include('features.php');?>
+
 <?php 
 
-		next_post_link('%link', 'Перейти на: %title', TRUE);
+		next_post_link('%link', 'Так же в этом разделе: %title', TRUE);
 ?>
 	</div>
 </section>

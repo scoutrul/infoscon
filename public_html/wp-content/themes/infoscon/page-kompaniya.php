@@ -25,7 +25,7 @@
 	</div>
 </section> <!-- / PAGE -->
 
-
+<?php include('steps.php');?>
 <?php include('whywe.php');?>
 
 

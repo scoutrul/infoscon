@@ -21,11 +21,11 @@
 							<a href="<?php the_permalink(); ?>"><span>Подробнее</span></a>
 						</div>
 							<? 
-								echo (get_post_meta($post->ID, 'days', true)) ? '<div class="services_days">Срок: до <span>'.get_post_meta($post->ID, 'days', true).'</span> дней</div>' : "-"; 
+								echo (get_post_meta($post->ID, 'days', true)) ? '<div class="services_days">Срок: до <span>'.get_post_meta($post->ID, 'days', true).'</span> дней</div>' : ""; 
 							?>
 
 							<? 
-								echo (get_post_meta($post->ID, 'price', true)) ? '<div class="services_price">Цена: от <span>'.get_post_meta($post->ID, 'price', true).'</span> рублей</div>' : "-";
+								echo (get_post_meta($post->ID, 'price', true)) ? '<div class="services_price">Цена: от <span>'.get_post_meta($post->ID, 'price', true).'</span> рублей</div>' : '<div class="services_price">Цена: <span>договорная</span>';
 							?>
 					</li>	
 					

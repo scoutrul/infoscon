@@ -42,11 +42,13 @@
 			<div class="order" id="bottomForm">Заказать лицензию</div>
 		</div>
 
-		<section class="copyright">© Компания "Инфо Связь Консалтинг" 2008-2016г, лицензирование услуг связи.
+		<section class="copyright">© Компания "Инфо-Связь Консалтинг" 2008-2016г, лицензирование услуг связи.
 			<div>
-				<a href="http://infoscon.ru/sitemap/">Карта сайта</a>
+				<a href="http://infoscon.ru/sitemap/">Карта сайта</a> / <a href="http://infoscon.ru/license-pro.ru/" target="_blank">Old ver.</a>
 			</div>
 		</section>
+
+
 
 	</section>
 
@@ -55,41 +57,7 @@
 
 
 <noindex>
-	<!-- Feedback form -->
-	<div id="contactForm" class="contactForm">
-		<div class="orderclose">+</div>
-		<form action="#">
-			<div class="contactform-label">Задайте свой вопрос</div>
-			<label>Ваше имя:
-				<input type="text" placeholder="Представьтесь" id="form_name">
-			</label>
-			<label>Контакты:
-				<input type="text" placeholder="e-mail" id="form_contact">
-			</label>
-			<textarea name="text" cols="30" rows="10" placeholder="Что Вас интересует?" id="form_text"></textarea>
-			<button class="send_mail">Отправить</button>
-		</form>
-	</div>
-	<!-- //Feedback form -->
-
-	<!-- order form -->
-	<div id="PostOrderForm" class="contactForm">
-		<div class="orderclose">+</div>
-		<form action="#">
-			<div class="h1">Сделать заказ:</div>
-			<label>Ваше имя:
-				<input type="text" placeholder="Представьтесь" name="name" id="form_name_order">
-			</label>
-			<label>Контакты:
-				<input type="text" placeholder="e-mail" name="contact" id="form_contact_order">
-			</label>
-			<textarea name="" cols="30" rows="6" placeholder="Что Вас интересует?" name="text" id="form_text_order"></textarea>
-			<button class="send_order">Заказать</button>
-		</form>
-	</div>
-	<!-- //order form -->
-
-
+	
 
 	<!-- Yandex.Metrika counter -->
 		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32281124 = new Ya.Metrika({ id:32281124, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/32281124" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -110,8 +78,27 @@
 
 <?php wp_footer(); ?>
 
-
+	<div id="feedback_me"><a href="http://infoscon.ru/license-pro.ru/" target="_blank">Предыдущая версия сайта</a></div>
 	<a href="#" class="scrollToTop">^</a>
+
+
+<?php include('forms.php');?>
+
+<script type="text/javascript">
+/* init Call Service */
+var CallSiteId = '4b3eee080bb57f99dfbbb924cde5e5cc';
+var CallBaseUrl = '//uptocall.com';
+(function() {
+    var lt = document.createElement('script');
+    lt.type ='text/javascript';
+    lt.charset = 'utf-8';
+    lt.async = true;
+    lt.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + CallBaseUrl + '/widget/client.js?rnd='+Math.floor(Math.random(0,1000)*1000);
+    var sc = document.getElementsByTagName('script')[0];
+    if (sc) sc.parentNode.insertBefore(lt, sc);
+    else document.documentElement.firstChild.appendChild(lt);
+})();
+</script>
 
 </body>
 </html>
@@ -120,23 +107,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
 
-<script>		
- document.addEventListener('DOMContentLoaded', function () {		
- 		
- 	var switchBlock = document.createElement('div');		
- 		switchBlock.setAttribute("id", "old_site");		
- 		
- 		
- 	var link = document.createElement('a');		
- 		var url = "/license-pro.ru/";		
- 				
- 		link.setAttribute("href", url);		
- 		link.innerHTML = "Старая версия сайта";		
- 		
- 		document.body.appendChild(switchBlock);		
- 		switchBlock.appendChild(link)		
- });		
- </script>
+
 
 
 

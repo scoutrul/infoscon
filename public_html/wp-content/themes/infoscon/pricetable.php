@@ -1,3 +1,6 @@
+<a name="pricetable"></a>
+<h2 class="priceheader">Виды услуг, <br>
+<u>стоимость</u> и <u>сроки</u> оформления лицензий связи:</h2>
 
 <!-- 	<h2>Таблица услуг</h2> -->
 	<table class="price" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">

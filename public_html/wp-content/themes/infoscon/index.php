@@ -15,17 +15,10 @@ if ( is_home() ) {
 				$title = $queried_post->post_title;
 				echo $queried_post->post_content;
 			?>
-
+		<?php include('steps.php');?>
 			<?php include('pricetable.php'); ?>
-<?
-	
-		$query_info = new WP_Query('page_id=16'); 
-			while($query_info->have_posts()) $query_info->the_post(); 
-			the_content();
-		wp_reset_query(); 
-	
-
-}?>			
+					<?php include('features.php');?>
+<?}?>			
 		</section>
 		
 	

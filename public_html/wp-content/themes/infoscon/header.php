@@ -5,18 +5,24 @@
 	<meta charset="UTF-8">
 	<title>ИНФОСВЯЗЬ КОНСАЛТИНГ / лицензии на услуги связи (регистрация, продление, переоформление)</title>
 
-	<meta name="description" content="<?php echo get_post_meta($post->ID, 'description', true); ?>" />
-	<meta name="keywords" content="<?php echo get_post_meta($post->ID, 'keywords', true); ?>" />
+<!-- 	<meta name="description" content="<?php echo get_post_meta($post->ID, 'description', true); ?>" />
+	<meta name="keywords" content="<?php echo get_post_meta($post->ID, 'keywords', true); ?>" /> -->
 	
 	<?php $host = $_SERVER['REQUEST_URI']; ?>
 
-
-
+<?php 
+	wp_head();
+	?>
 
 </head>
 <body>
 
 
+<div class="deshevle">
+	<a href="/uslugi/">
+		<img src="<?php bloginfo('template_url'); ?>/images/deshevle.png" alt="Самые низкие цены на лицензии связи">
+	</a>
+</div>	
 
 
 	<header>
@@ -30,7 +36,7 @@
 				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="ИнфоСвязь Консалтинг" class="gohome">
 			</div>
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
-			<a class="order" id="freeCons">Вопросы?</a>
+			<a class="order" id="freeCons">Задать вопрос</a>
 		</section>
 	</header>
 
