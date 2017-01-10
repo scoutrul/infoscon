@@ -64,34 +64,20 @@
 					</tr>
 
 				</tbody>
+		
 			<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
 
-		<? 
-		echo '
-
-				<tr>
-					<th colspan="4" class="price-section-end">&nbsp;</th>
-				</tr>
-			';
-		?>
 		<? } ?>
 <? } ?>
 
-<? 
-echo '
-	<tfoot>
-		<tr>
-			<th colspan="4" class="price-section-end" style="font-size: 160%;">Внимание! Получите скидку при заказе двух и более лицензий!</th>
-		</tr>
-		<tr>
-			<th colspan="4">
-				<div class="post_order pricetable">Заказать</div>
-			</th>
-		</tr>
-	</tfoot>';
-?>
+
 	</table>
 
+	<div class="price-section-hot">
+			<div  style="font-size: 160%;"><span style="color:red">Внимание!</span><br>Получите скидку при заказе двух или более лицензий!</div>
+			<div class="post_order pricetable">Заказать</div>
+	</div>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>

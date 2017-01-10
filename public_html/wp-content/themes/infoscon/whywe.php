@@ -2,7 +2,7 @@
 	<div class="whywe_bg"></div>
 				<section>
 					<h1>Несколько причин<br>
-					<strong style="font-size: 290%">в нашу пользу</strong></h1>
+					<strong style="font-size: 290%">доверять нам</strong></h1>
 
 					<ol class="index">
 						<li>
@@ -27,7 +27,7 @@
 							    <path d="M0 0h24v24H0z" fill="none"/>
 							    <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" fill-opacity=".9"/>
 							</svg>
-							<p><strong>Повышенная срочность</strong>. Подготовка документов занимает всего <strong>1-2 дня</strong>.</p>
+							<p><strong>Повышенная срочность!</strong> Подготовка документов занимает всего <strong>1-2 дня</strong>.</p>
 						</li>
 
 

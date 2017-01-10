@@ -3,7 +3,10 @@
 
 <!-- Услуги -->
 
-
+<?php
+		 require('header_services.php'); 
+		 
+?>
 <section class="page  page-services"> 
 	<div class="container">
 
@@ -15,6 +18,8 @@
 				wp_reset_query(); 
 			?>
 		</div>
+
+
 
 		<div class="uslugi">
 			<h2>Какую лицензию связи Вам необходимо получить?</h2>

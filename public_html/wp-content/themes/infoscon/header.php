@@ -18,11 +18,11 @@
 <body>
 
 
-<div class="deshevle">
+<!-- <div class="deshevle">
 	<a href="/uslugi/">
 		<img src="<?php bloginfo('template_url'); ?>/images/deshevle.png" alt="Самые низкие цены на лицензии связи">
 	</a>
-</div>	
+</div>	 -->
 
 
 	<header>
@@ -33,10 +33,15 @@
 				<div class="x3"></div>
 		    </div>	
 			<div class="logo">
-				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="ИнфоСвязь Консалтинг" class="gohome">
+				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="Компания ИнфоСвязь Консалтинг" class="gohome"><br>
+				<img src="<?php bloginfo('template_url'); ?>/images/logo-slogan.png" alt="Связисты для связистов"><br>
+
 			</div>
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
-			<a class="order" id="freeCons">Задать вопрос</a>
+			<div>
+				<img src="<?php bloginfo('template_url'); ?>/images/header_phone.png"><br>			
+				<a class="order" id="freeCons">Задать вопрос</a>
+			</div>
 		</section>
 	</header>
 

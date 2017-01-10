@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 
-
+<?php include('whywe.php');?>
 		<?php 
 			if (have_posts()): while (have_posts()): the_post(); 
 		?>
@@ -25,8 +25,7 @@
 	</div>
 </section> <!-- / PAGE -->
 
-<?php include('steps.php');?>
-<?php include('whywe.php');?>
+
 
 
 <section class="page"> 
@@ -40,6 +39,7 @@
 	</div>
 </section> <!-- / PAGE -->
 
+<?php include('steps.php');?>
 
 
 

@@ -308,9 +308,8 @@
 
 header {
 	background-color: #191817;
-	max-height: 100px;  
+	max-height: 85px;  
 	width: 100%;
-	height: 100px;
 	transition: all .1s ease;
 	-webkit-transition: all .1s ease;
 	-moz-transition: all .1s ease;
@@ -337,10 +336,11 @@ header {
 			padding: 0 30px;
 			overflow: hidden;
 			z-index: 0;
+			align-items: center;
 }
 
 		header .logo {
-			margin: 22px 50px auto 0;
+			margin: 0px 50px auto 0;
 			z-index: 10;
 			cursor: pointer;
 }	
@@ -352,7 +352,7 @@ header {
 		}
 
 		header .top_menu {
-			line-height: 90px;
+			padding: 0;
 			margin: auto;
 			text-transform: uppercase;
 			font-size: .8em;
@@ -585,7 +585,7 @@ header .top_menu li.current-menu-item a:before {
 								    -o-transition: all 1s ease;
 								}
 
-		header .order {
+/*header .order {
 			overflow: hidden;
 			text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 			margin: auto 0 auto 30px;
@@ -598,7 +598,7 @@ header .top_menu li.current-menu-item a:before {
 			background-image: linear-gradient(180deg, #33A4FC, #0086ED);
 			min-width: 100px;
 			max-width: 160px;
-			/*width: 100%;*/
+			/*width: 100%;
 			text-align: center;
 			border-radius: 4px;
 			font-size: .8em;
@@ -619,7 +619,20 @@ header .top_menu li.current-menu-item a:before {
 					background-image: -webkit-linear-gradient(270deg, #0086ee, rgba(0, 134, 237, 0.81));
 					background-image: linear-gradient(180deg, #0086ee, rgba(0, 134, 237, 0.81));
 				} 
-
+*/
+header .order {
+    color: #27a0fd;
+    font-size: .8em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    display: block;
+    text-align: right;
+    margin-right: 5px;
+}
 
 
 .header_padding {
@@ -2026,7 +2039,9 @@ form label {
     text-align: center;
     display: block;
 }
-
+.contactForm button:hover{
+	opacity: .9;
+}
 
 .contactForm .orderclose {
 
@@ -2686,6 +2701,9 @@ form label {
 	text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 	/*it is a button*/
 }
+.pricetable:hover {
+	opacity: .9;
+}
 
 table.price {
     width: 100%;
@@ -2715,7 +2733,7 @@ table.price thead th {
 	font-family: 'Roboto Slab',serif;
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
-	background-color: #E6E6E6;
+	background-color: #f1f1f1;
 }
 
 table.price td,
@@ -2731,7 +2749,7 @@ table .price_thead tr {
 
 
 table .price-header {
-	background-color: #F7EA94;
+	background-color: #e6e6e6;
 }
 
 table .h {
@@ -2749,9 +2767,11 @@ table .price-section-in {
 	outline-offset: -2px;
 }
 
-table .price-section-in:hover,
 table .price-section-in.active {
 	background-color: rgb(252, 255, 243) !important
+}
+table .price-section-in:hover{
+	background-color: rgb(230, 230, 230) !important
 }
 
 table .price-section-in-excerpt {
@@ -2778,6 +2798,13 @@ table .price-section-end {
 	background-color: #FFF;
 }
 
+.price-section-hot {
+	background-color: white;
+	text-align: center;
+	margin: 10px 0;
+	padding: 40px;
+	line-height: 90px;
+}
 
 table .price-section-in-days {
 	text-align: center;
@@ -2798,8 +2825,11 @@ table .price-section-in-price span {
 	text-decoration: underline;
 }
 .price .price-section-excerpt {
-	padding: 30px 30px 30px 10px;
+	padding: 0px 30px 20px 10px;
 	line-height: 160%;
+}
+.price .price-section-excerpt p {
+	padding:0;
 }
 
 .price-section-more {

@@ -1,4 +1,4 @@
-			<section class="services off" id="scroll-flag">
+			<section class="services on" id="scroll-flag">
 			
 				<div class="container">
 					<div class="menu">
@@ -66,8 +66,3 @@
 
 			</section>
 
-			<div class="header_padding toprice">
-				<div class="arrow bounce">
-					<div>Основные услуги</div>
-				</div>
-			</div>
