@@ -16,6 +16,8 @@
 			?>
 		</div>
 
+
+		
 		<?php include('pricetable.php'); ?>
 
 		<?php include('steps.php');?>

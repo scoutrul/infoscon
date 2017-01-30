@@ -47,12 +47,7 @@
 
 	<div class="single_footer">
 
-	<?php include('steps.php');?>
-
-
-
-
-
+		<?php include('steps.php');?>
 		<?php include('features.php');?>
 
 <?php 

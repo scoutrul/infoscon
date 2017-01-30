@@ -18,8 +18,9 @@
 	<ul class="service_catalog">
 		<?php query_posts('cat=1'); ?>
 		<?php while (have_posts()) : the_post(); ?>
-			<? require('services_loop.php') ?>	
+			<? require('info_loop.php') ?>	
 		<?php endwhile; ?>
+		<?php wp_reset_query();?>
 	</ul>
 
 	</div>

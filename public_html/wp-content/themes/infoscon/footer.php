@@ -1,11 +1,11 @@
 
-				<?php 
-					if (!is_Home() && !is_404() && !is_Page()){
-						echo '<section class="breadcrumbs bottom">';
-						yoast_breadcrumb('<div class="breadcrumbs__nav">Вы здесь: ','</div>');
-						echo '</section>';
-					}
-				?>
+<?php if (!is_Home() && !is_404() && !is_Page() && !is_category() && !in_category(1)){
+	echo '<section class="breadcrumbs">';
+	yoast_breadcrumb('<div class="breadcrumbs__nav">','</div>');
+	echo '</section>';
+}
+?>
+
 
 
 		</div> <!-- /main -->
@@ -42,7 +42,7 @@
 			<div class="order" id="bottomForm">Заказать лицензию</div>
 		</div>
 
-		<section class="copyright">© Компания "Инфо-Связь Консалтинг" 2008-2016г, лицензирование услуг связи.
+		<section class="copyright">© Компания "Инфо-Связь Консалтинг" 2008-2017г, лицензирование услуг связи.
 			<div>
 				<a href="http://infoscon.ru/sitemap/">Карта сайта</a> / <a href="http://infoscon.ru/license-pro.ru/" target="_blank">Old ver.</a>
 			</div>

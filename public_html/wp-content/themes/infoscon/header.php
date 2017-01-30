@@ -34,13 +34,13 @@
 		    </div>	
 			<div class="logo">
 				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="Компания ИнфоСвязь Консалтинг" class="gohome"><br>
-				<img src="<?php bloginfo('template_url'); ?>/images/logo-slogan.png" alt="Связисты для связистов"><br>
+				<img src="<?php bloginfo('template_url'); ?>/images/logo-slogan.png" alt="Связисты для связистов" class="gohome"><br>
 
 			</div>
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
-			<div>
+			<div style="margin-right:-4px;">
 				<img src="<?php bloginfo('template_url'); ?>/images/header_phone.png"><br>			
-				<a class="order" id="freeCons">Задать вопрос</a>
+				<a class="order" id="freeCons">Узнать свою скидку</a>
 			</div>
 		</section>
 	</header>
@@ -56,7 +56,7 @@
 <div class="main">
 
 
-	<?php if (!is_Home() && !is_404() && !is_Page()){
+	<?php if (!is_Home() && !is_404() && !is_Page() && !is_category() && !in_category(1)){
 		echo '<section class="breadcrumbs">';
 		yoast_breadcrumb('<div class="breadcrumbs__nav">','</div>');
 		echo '</section>';

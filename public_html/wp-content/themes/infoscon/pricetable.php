@@ -1,6 +1,6 @@
 <a name="pricetable"></a>
 <h2 class="priceheader">Виды услуг, <br>
-<u>стоимость</u> и <u>сроки</u> оформления лицензий связи:</h2>
+<u>стоимость</u> и <u>сроки</u> оформления лицензий:</h2>
 
 <!-- 	<h2>Таблица услуг</h2> -->
 	<table class="price" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
@@ -34,14 +34,14 @@
 			</thead>'
 	?>
 
-			<?	$IDcatTab = 'cat='.$categoryTab->term_id.'&showposts=-1';
+			<?	$IDcatTab = 'cat='.$categoryTab->term_id.'&showposts=-1&orderby=date';
 				query_posts($IDcatTab); 
 				while (have_posts()) : the_post(); ?>
 
 				<tbody class="price-section-in">
 
 					<tr class="price-section-open">
-						<td class="price-section-in-num"><?$num++; print $num;?></td>
+						<td class="price-section-in-num"></td>
 						<td class="price-section-in-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
 						<td class="price-section-in-price"><? echo (get_post_meta($post->ID, 'price', true)) ? 'от <span>'.get_post_meta($post->ID, 'price', true).'</span> руб.' : "-" ?></td>
 						<td class="price-section-in-days"><? echo (get_post_meta($post->ID, 'days', true)) ? '<span>'.get_post_meta($post->ID, 'days', true).'</span> дней' : "-"; ?></td>
@@ -84,16 +84,16 @@
 
 	<script>
 		// price table
-		$(function(){
+		// $(function(){
 
-			$('.price-section-in-excerpt').hide();
+		// 	$('.price-section-in-excerpt').hide();
 
-			$('.price-section-open').click(function() {
-				event.preventDefault();
-				$(this).parent('.price-section-in').children('.price-section-in-excerpt').toggle();
-				$(this).parent('.price-section-in').toggleClass('active');
+		// 	$('.price-section-open').click(function() {
+		// 		event.preventDefault();
+		// 		$(this).parent('.price-section-in').children('.price-section-in-excerpt').toggle();
+		// 		$(this).parent('.price-section-in').toggleClass('active');
 				
-			});
+		// 	});
 
-		});
+		// });
 	</script>

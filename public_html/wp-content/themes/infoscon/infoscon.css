@@ -204,7 +204,7 @@
 	}
 
 	ol.features_footer li:nth-child(2n) svg	{
-	    float:right;
+	    /*float:right;*/
 	}
 
 
@@ -343,6 +343,7 @@ header {
 			margin: 0px 50px auto 0;
 			z-index: 10;
 			cursor: pointer;
+			text-align: center;
 }	
 					header .logo img {
 					}
@@ -522,7 +523,7 @@ header .top_menu li.current-menu-item a:before {
 			color: rgb(255, 255, 255);
 			height: 30px;
 			padding: 7px 0px;
-			display: inline;
+			display: inline-block;
 			transition: all .5s ease;
 			-webkit-transition: all .5s ease;
 			-moz-transition: all .5s ease;
@@ -585,29 +586,29 @@ header .top_menu li.current-menu-item a:before {
 								    -o-transition: all 1s ease;
 								}
 
-/*header .order {
-			overflow: hidden;
-			text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-			margin: auto 0 auto 30px;
-			color: #FFF;
-			line-height: 15px;
-			padding: 10px;
-			height: 50px;
-			background-color: #0488EE;
-			background-image: -webkit-linear-gradient(270deg, #33A4FC, #0086ED);
-			background-image: linear-gradient(180deg, #33A4FC, #0086ED);
-			min-width: 100px;
-			max-width: 160px;
-			/*width: 100%;
-			text-align: center;
-			border-radius: 4px;
-			font-size: .8em;
-			letter-spacing: 0.1em;	
-			cursor: pointer;
-			transition: all .1s ease-in-out;
-			-webkit-transition: all .1s ease-in-out;
-			-moz-transition: all .1s ease-in-out;
-			-o-transition: all .1s ease-in-out;
+header .order {
+		overflow: hidden;
+		display: block;
+		text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+		margin: 0 5px 0 auto;
+		color: #FFF;
+		line-height: 15px;
+		padding: 10px;
+		background-color: #0488EE;
+		background-image: -webkit-linear-gradient(270deg, #33A4FC, #0086ED);
+		background-image: linear-gradient(180deg, #33A4FC, #0086ED);
+		min-width: 70px;
+		max-width: 200px;
+		width: 100%;
+		text-align: center;
+		border-radius: 4px;
+		font-size: .8em;
+		letter-spacing: 0.1em;
+		cursor: pointer;
+		transition: all .1s ease-in-out;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .1s ease-in-out;
+		-o-transition: all .1s ease-in-out;
 			}
 
 				header .order:hover {
@@ -619,20 +620,6 @@ header .top_menu li.current-menu-item a:before {
 					background-image: -webkit-linear-gradient(270deg, #0086ee, rgba(0, 134, 237, 0.81));
 					background-image: linear-gradient(180deg, #0086ee, rgba(0, 134, 237, 0.81));
 				} 
-*/
-header .order {
-    color: #27a0fd;
-    font-size: .8em;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    display: block;
-    text-align: right;
-    margin-right: 5px;
-}
 
 
 .header_padding {
@@ -2709,7 +2696,7 @@ table.price {
     width: 100%;
     line-height: 150%;
     font-size: 90%;
-    background: #FFF;
+    background: rgba(255, 255, 255, 0);
 }
 
 table.price tfoot:last-child th {
@@ -2719,7 +2706,7 @@ table.price tfoot:last-child th {
 table.price thead {
 
 }
-table.price thead:after {
+table.price thead:before {
     content: '';
     display: table;
     height: 20px;
@@ -2765,6 +2752,7 @@ table .price-section-in {
 	transition: .1s ease-out;
 	outline: 1px solid rgba(185, 185, 185, 0.45);
 	outline-offset: -2px;
+	background-color: white;
 }
 
 table .price-section-in.active {
@@ -2799,11 +2787,12 @@ table .price-section-end {
 }
 
 .price-section-hot {
-	background-color: white;
 	text-align: center;
 	margin: 10px 0;
 	padding: 40px;
 	line-height: 90px;
+	outline: 1px solid #F00;
+	outline-offset: -2px;
 }
 
 table .price-section-in-days {
@@ -2881,4 +2870,65 @@ table .price-section-in-price span {
 		padding: 0px !important;
 	}
 
+}
+
+
+/* news articles */
+
+section.newsart {
+	padding: 0;
+	margin: auto;
+	background-color: #f7f7f7;
+	max-width: 100%;
+}
+section.newsart section {
+    padding: 40px 0 5px;
+}
+
+.newsart {
+	margin: 0;
+	display:flex;
+}
+
+.newsart li {
+	margin: 0 3px;
+	padding: 20px;
+	flex: 1 30%;
+	background-color: white;
+}
+
+.excerpt {
+	display: block !important;
+	width: 100% !important;
+}
+
+.newsart .excerpt .title {
+	display: inline;
+	margin-top: 20px;
+}
+
+.newsart .excerpt .date {
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.newsart .excerpt .image {
+	height: 200px;
+	text-align: center;
+}
+
+.newsart .excerpt .image img {
+	height: 100% !important;
+/*	width: 100% !important;*/
+	object-fit: contain;
+	object-fit: scale-down;
+	object-position: center;
+}
+.newsart .excerpt .text {}
+.newsart .excerpt .readmore {}
+
+.newbut{
+	width: 400px !important; 
+	margin-bottom: 70px !important; 
+	display: block !important;
 }

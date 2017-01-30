@@ -34,12 +34,13 @@
 		
 
 	<? echo $content_after;?>
-<?php endwhile; endif; ?>
+	<?php endwhile; endif; ?>
+
+	<?php include('steps.php');?>
+	<?php include('features.php');?>
 
 	</div>
 </section> <!-- / PAGE -->
-
-<?php include('steps.php');?>
 
 
 

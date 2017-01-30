@@ -30,4 +30,6 @@
 			Вы наслаждаетесь успехом с счастливой улыбкой. Пишете отзыв :)</div>
 		</div>
 	</div>
+
 </section>
+<div class="post_order pricetable newbut">Заказать	лицензию связи</div>

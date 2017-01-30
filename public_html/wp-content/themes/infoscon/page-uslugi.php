@@ -39,8 +39,8 @@
 								<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 								<?php endwhile; 
 						echo '</ul>';
-						wp_reset_query(); 
 					 }
+						wp_reset_query(); 
 					}
 			?>	
 		</div>
