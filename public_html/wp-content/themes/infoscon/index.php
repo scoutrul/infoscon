@@ -12,7 +12,7 @@
 					<?php wp_reset_query();?>
 
 				</ul>
-					<div style="width: 100%; text-align: right;"><a href="/informrazdel/">Архив статей</a></div>
+					<div style="width: 100%; text-align: right; font-size: 70%"><a href="/informrazdel/">Архив статей</a></div>
 			</section>
 		</section>
 

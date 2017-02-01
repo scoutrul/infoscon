@@ -82,6 +82,8 @@
 		font-family: 'Open Sans', sans-serif;
 		font-size: 0.96em;
 		font-weight: 400;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
 		height: 100%;
 		background-color: #141417;
 		background-image: url(images/raster.png);
@@ -590,10 +592,10 @@ header .order {
 		overflow: hidden;
 		display: block;
 		text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-		margin: 0 5px 0 auto;
+		margin: 15px 5px 0 auto;
 		color: #FFF;
 		line-height: 15px;
-		padding: 10px;
+		padding: 5px 10px;
 		background-color: #0488EE;
 		background-image: -webkit-linear-gradient(270deg, #33A4FC, #0086ED);
 		background-image: linear-gradient(180deg, #33A4FC, #0086ED);
@@ -1533,8 +1535,8 @@ footer {
 		    -webkit-transition: 1s;
 		            transition: 1s;
 
-			 -webkit-flex-direction: column;
-			flex-direction: column;
+			 -webkit-flex-direction:  row-reverse;
+			flex-direction:  row-reverse;
 		
 }
 
@@ -1700,6 +1702,8 @@ footer {
 
 /* под смартфоны */
 @media only screen and (max-width: 880px) and (min-width: 1px) {
+
+.gerbs {display:none;}
 
 .mobile_menu {    
     -webkit-box-pack: start;    
@@ -2882,7 +2886,7 @@ section.newsart {
 	max-width: 100%;
 }
 section.newsart section {
-    padding: 40px 0 5px;
+    padding: 20px 0 0px;
 }
 
 .newsart {
@@ -2892,7 +2896,7 @@ section.newsart section {
 
 .newsart li {
 	margin: 0 3px;
-	padding: 20px;
+    padding: 10px 20px;
 	flex: 1 30%;
 	background-color: white;
 }
@@ -2903,17 +2907,19 @@ section.newsart section {
 }
 
 .newsart .excerpt .title {
-	display: inline;
-	margin-top: 20px;
+	font-size: 14px;
+	margin: 0;
 }
 
 .newsart .excerpt .date {
-	font-size: 12px;
-	margin: 10px 0;
+	font-size: 11px;
+	position: absolute;
+	color: #a9aaae;
+	top: -20px;
 }
 
 .newsart .excerpt .image {
-	height: 200px;
+	height: 120px;
 	text-align: center;
 }
 
@@ -2931,4 +2937,23 @@ section.newsart section {
 	width: 400px !important; 
 	margin-bottom: 70px !important; 
 	display: block !important;
+}
+
+
+
+.gerbs {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
+
+.gerbs .rf, .gerbs .minkomsvyaz, .gerbs .roskomnadzor {
+	opacity: 0.5;
+}
+.gerbs .rf:hover, .gerbs .minkomsvyaz:hover, .gerbs .roskomnadzor:hover {
+	opacity: 1;
+	cursor: pointer;
 }

@@ -42,10 +42,19 @@
 			<div class="order" id="bottomForm">Заказать лицензию</div>
 		</div>
 
-		<section class="copyright">© Компания "Инфо-Связь Консалтинг" 2008-2017г, лицензирование услуг связи.
-			<div>
-				<a href="http://infoscon.ru/sitemap/">Карта сайта</a> / <a href="http://infoscon.ru/license-pro.ru/" target="_blank">Old ver.</a>
+		<section class="copyright">
+			<div class="gerbs">
+				<div class="rf"><img src="<?php bloginfo('template_url'); ?>/images/gerbrf.png" title="Работаем по всей территории Российскаой Федерации"></div>
+				<div class="minkomsvyaz" style="margin: 30px;"><img src="<?php bloginfo('template_url'); ?>/images/minkomsvyaz.png" title="При сотрудничестве с Министерством связи и массовых коммуникаций Российской Федерации (Минкомсвязь России)"></div>
+				<div class="roskomnadzor"><img src="<?php bloginfo('template_url'); ?>/images/roskomnadzor.png" title="При сотрудничестве с Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций"></div>
 			</div>
+			<div>
+				<div>© Компания "Инфо-Связь Консалтинг" 2008-2017г, лицензирование услуг связи.</div>
+				<div>
+					<a href="http://infoscon.ru/sitemap/">Карта сайта</a> / <a href="http://infoscon.ru/license-pro.ru/" target="_blank">Old ver.</a>
+				</div>
+			</div>
+
 		</section>
 
 
@@ -125,9 +134,12 @@ var CallBaseUrl = '//uptocall.com';
 		/*  imports */
 	@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic);
 	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=cyrillic);
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic);
+
+
 		/* /imports */
 	@font-face {
-	  font-family: 'Roboto Slab', 'Open Sans';
+	  font-family: 'Roboto Slab', 'Open Sans', 'Roboto';
 	  font-display: fallback;
 	 }
 </style>

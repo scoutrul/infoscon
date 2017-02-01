@@ -153,6 +153,10 @@ $(function() {
 
 // logo href
 		$('.gohome').click(function(){ window.location = '/'});
+// gerbs href
+		$('.rf').click(function(){ window.location = 'http://government.ru/'});
+		$('.minkomsvyaz').click(function(){ window.location = 'http://minsvyaz.ru/'});
+		$('.roskomnadzor').click(function(){ window.location = 'https://rkn.gov.ru/'});
 
 
 // menu burger 
