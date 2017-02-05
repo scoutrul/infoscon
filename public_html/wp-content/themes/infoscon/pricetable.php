@@ -75,8 +75,11 @@
 	</table>
 
 	<div class="price-section-hot">
-			<div  style="font-size: 160%;"><span style="color:red">Внимание!</span><br>Получите скидку при заказе двух или более лицензий!</div>
-			<div class="post_order pricetable">Заказать</div>
+			<div  style="font-size: 160%;">
+				<span style="color:red">Внимание!</span><br>
+				Получите скидку 10% при заказе двух лицензий и далее 10% на каждую следующую лицензию: 30% - на заказ трех лицензий, 40% - четырех и т.д.!
+			</div>
+			<div class="post_order pricetable">Заказать со скидкой</div>
 	</div>
 
 

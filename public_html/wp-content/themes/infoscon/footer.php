@@ -44,9 +44,9 @@
 
 		<section class="copyright">
 			<div class="gerbs">
-				<div class="rf"><img src="<?php bloginfo('template_url'); ?>/images/gerbrf.png" title="Работаем по всей территории Российскаой Федерации"></div>
-				<div class="minkomsvyaz" style="margin: 30px;"><img src="<?php bloginfo('template_url'); ?>/images/minkomsvyaz.png" title="При сотрудничестве с Министерством связи и массовых коммуникаций Российской Федерации (Минкомсвязь России)"></div>
-				<div class="roskomnadzor"><img src="<?php bloginfo('template_url'); ?>/images/roskomnadzor.png" title="При сотрудничестве с Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций"></div>
+				<div class="rf"><img src="<?php bloginfo('template_url'); ?>/images/gerbrf.png" title="Работаем по всей территории Российской Федерации"></div>
+				<div class="minkomsvyaz" style="margin: 30px;"><img src="<?php bloginfo('template_url'); ?>/images/minkomsvyaz.png" title="Министерство связи и массовых коммуникаций Российской Федерации (Минкомсвязь России)"></div>
+				<div class="roskomnadzor"><img src="<?php bloginfo('template_url'); ?>/images/roskomnadzor.png" title="Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций"></div>
 			</div>
 			<div>
 				<div>© Компания "Инфо-Связь Консалтинг" 2008-2017г, лицензирование услуг связи.</div>

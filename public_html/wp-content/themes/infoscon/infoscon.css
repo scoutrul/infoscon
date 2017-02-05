@@ -342,7 +342,7 @@ header {
 }
 
 		header .logo {
-			margin: 0px 50px auto 0;
+			margin: auto;
 			z-index: 10;
 			cursor: pointer;
 			text-align: center;
@@ -498,7 +498,7 @@ header .top_menu li.current-menu-item a:before {
 
 
 
-.top_menu li:nth-child(2) a:after {
+.top_menu li:nth-child(1) a:after {
 	height: 1px;
 	-webkit-animation: menuUslugi_a 3s infinite ease;
 	animation: menuUslugi_a 3s infinite ease;
@@ -507,14 +507,12 @@ header .top_menu li.current-menu-item a:before {
 	opacity: .5
 }
 
-.top_menu li:nth-child(2) a:before {
+.top_menu li:nth-child(1) a:before {
 	height: 1px;
 	-webkit-animation: menuUslugi_b 3s infinite ease;
 	animation: menuUslugi_b 3s infinite ease;
 	background-color: #edce24;
 	width:100%;
-
-
 }
 
 /* ................................. */
@@ -2289,7 +2287,7 @@ form label {
 						        transition:.0s;
 					}
 					.mobile .top_menu {
-						margin: 20px 0 0 0;
+						margin: 20px 0 0 0 !important;
 						opacity:1;
 						filter: alpha(opacity=100);
 						-webkit-transition:.3s;
@@ -2299,7 +2297,7 @@ form label {
 
 						
 							header .top_menu li {
-								line-height: 70px; 
+								line-height: 20px; 
 								width: 100vw;
 								display: block;
 							}
@@ -2909,6 +2907,7 @@ section.newsart section {
 .newsart .excerpt .title {
 	font-size: 14px;
 	margin: 0;
+	text-align: center;
 }
 
 .newsart .excerpt .date {
@@ -2921,14 +2920,15 @@ section.newsart section {
 .newsart .excerpt .image {
 	height: 120px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .newsart .excerpt .image img {
-	height: 100% !important;
-/*	width: 100% !important;*/
-	object-fit: contain;
+	height: 120px;
+	width: auto;
+	flex: 1;
 	object-fit: scale-down;
-	object-position: center;
 }
 .newsart .excerpt .text {}
 .newsart .excerpt .readmore {}

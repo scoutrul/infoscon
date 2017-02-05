@@ -150,6 +150,12 @@ $(function() {
 			});
 
 
+//index current-menu-item
+
+	if (window.location.pathname == '/' || window.location.pathname == '/index/')
+	{
+		$(".top_menu>li:nth-child(1)").addClass("current-menu-item"); 
+	}
 
 // logo href
 		$('.gohome').click(function(){ window.location = '/'});

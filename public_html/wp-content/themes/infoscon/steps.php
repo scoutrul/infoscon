@@ -32,4 +32,4 @@
 	</div>
 
 </section>
-<div class="post_order pricetable newbut">Заказать	лицензию связи</div>
+<div class="post_order pricetable newbut">Заказать	лицензию</div>
