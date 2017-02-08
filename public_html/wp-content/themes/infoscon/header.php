@@ -18,12 +18,6 @@
 <body>
 
 
-<!-- <div class="deshevle">
-	<a href="/uslugi/">
-		<img src="<?php bloginfo('template_url'); ?>/images/deshevle.png" alt="Самые низкие цены на лицензии связи">
-	</a>
-</div>	 -->
-
 
 	<header>
 		<section class="header">
@@ -37,7 +31,17 @@
 				<img src="<?php bloginfo('template_url'); ?>/images/logo-slogan.png" alt="Связисты для связистов" class="gohome"><br>
 
 			</div>
+
+			<ul class="poduslugi">
+				<li><a href="/uslugi/litsenzii-svyazi/">Лицензии связи</a></li>
+				<li><a href="/uslugi/litsenzii-na-veshhanie/">Лицензии на вещание</a></li>
+				<li><a href="/uslugi/razresheniya-na-chastoty/">Разрешения на частоты</a></li>
+				<li><a href="/uslugi/smi/">Регистрация СМИ</a></li>
+				<li><a href="/prodlenie-litsenzij-svyazi/">Продление и переоформление</a></li>
+			</ul>
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
+
+
 			<div style="margin-right:-4px;">
 				<img src="<?php bloginfo('template_url'); ?>/images/header_phone.png"><br>			
 				<a class="order" id="freeCons">Узнать свою скидку</a>

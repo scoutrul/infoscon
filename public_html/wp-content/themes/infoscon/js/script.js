@@ -157,6 +157,31 @@ $(function() {
 		$(".top_menu>li:nth-child(1)").addClass("current-menu-item"); 
 	}
 
+// expand menu 'uslugi'
+
+
+
+	var uslugiplace = $("#menu-top_menu a:contains('Услуги')");
+	uslugiplace.css({    'display': 'inherit'});
+
+
+
+	uslugiplace.hover( 
+		function(event){
+			$('.poduslugi').show();
+			uslugiplace.addClass('show')
+		}, function(){
+			$('.poduslugi').hide();
+			uslugiplace.removeClass('show')
+
+		} 
+	);	
+
+	$('.poduslugi').hide().appendTo(uslugiplace);
+
+
+
+
 // logo href
 		$('.gohome').click(function(){ window.location = '/'});
 // gerbs href
@@ -212,7 +237,7 @@ if($("#scroll-flag").length >= 1) {
 	
 		var topScrollGo = function() {
 			var topScroll = $(this).scrollTop();
-			$('.s_bg').css({transform: 'translate3d(0px,'+ topScroll/3.35 +'px,0px)'});
+			$('.s_bg,.whywe_bg').css({transform: 'translate3d(0px,'+ topScroll/3.35 +'px,0px)'});
 		};
 			$( window ).scroll(topScrollGo);
 
@@ -224,7 +249,7 @@ if($("#scroll-flag").length >= 1) {
 
 
 
-// smooth scroll default
+		// smooth scroll default
 
 
 		/*set to ">" for eneble only on index-page */ 

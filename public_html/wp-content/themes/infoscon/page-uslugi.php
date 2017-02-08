@@ -3,10 +3,7 @@
 
 <!-- Услуги -->
 
-<?php
-		 require('header_services.php'); 
-		 
-?>
+
 <section class="page  page-services"> 
 	<div class="container">
 

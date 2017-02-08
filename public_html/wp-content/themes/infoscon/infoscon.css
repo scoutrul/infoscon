@@ -316,7 +316,6 @@ header {
 	-webkit-transition: all .1s ease;
 	-moz-transition: all .1s ease;
 	-o-transition: all .1s ease;
-	overflow: hidden;
 	background-image: url(images/raster.png);
 	background-repeat: no-repeat;
 	z-index: 1001;
@@ -336,7 +335,6 @@ header {
 			-webkit-flex-direction: row;
 			margin: auto;
 			padding: 0 30px;
-			overflow: hidden;
 			z-index: 0;
 			align-items: center;
 }
@@ -382,16 +380,15 @@ header {
 				}
 
 						header .top_menu li {
-							display: inline-block;
+
 							margin: auto;
 							min-width: 80px;
 							max-width: 130px;
 							text-align: center;
 							width: 100%;
-						
+						list-style-type: none;
 							padding: 5px 0;
 							letter-spacing: 0.17em;
-							overflow: hidden;
 }
 
 header .top_menu li.current-menu-item a {
@@ -402,43 +399,33 @@ header .top_menu li.current-menu-item a:before {
 	display:none;
 }
 
-
-.deshevle {
-    top: -200px;
-    position: fixed;
-    z-index: 10000;
-    right: 0;
-    animation: deshevle 7s 7s infinite ease;
-    -webkit-animation: deshevle 7s 7s infinite ease;
-	opacity: 0;
+header .poduslugi {
+	position: absolute;
+	flex-direction: column;
+	padding: 0 !important;
+	background-color: #f7f7f7;
+    padding: 30px !important;
+        border: 0px solid #ccc;
+    border-bottom-width: 1px;
 }
-.deshevle:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+header .poduslugi li {
+	margin:0;
+	padding: 0;
+	max-width: 100%;
+}
+header .poduslugi a {
+	overflow: visible !important;
+	display: block !important;
+	color: #000 !important;
+	padding: 10px !important;
+	height: initial !important;
 }
 
-
-.deshevle>img {
-	height: 100%;
+.show {
+	overflow: visible !important;
+	display: block;
+	cursor: default;
 }
-
-@keyframes deshevle {
-	0%{
-		opacity: 100;
-	}
-	5% {
-    	top: 40px;
-	}
-	95% {
-		opacity: 0;
-	}
-	100% {
-		top: -100px;
-	}
-}
-/*@-webkit-keyframes deshevle {
-
-}*/
 
 
 /* ................................. */
@@ -496,9 +483,11 @@ header .top_menu li.current-menu-item a:before {
 }
 
 
+.top_menu li:nth-child(1){
+	list-style: none;
+}
 
-
-.top_menu li:nth-child(1) a:after {
+/*.top_menu li:nth-child(1) a:after {
 	height: 1px;
 	-webkit-animation: menuUslugi_a 3s infinite ease;
 	animation: menuUslugi_a 3s infinite ease;
@@ -514,7 +503,7 @@ header .top_menu li.current-menu-item a:before {
 	background-color: #edce24;
 	width:100%;
 }
-
+*/
 /* ................................. */
 
 
@@ -523,13 +512,12 @@ header .top_menu li.current-menu-item a:before {
 			color: rgb(255, 255, 255);
 			height: 30px;
 			padding: 7px 0px;
-			display: inline-block;
 			transition: all .5s ease;
 			-webkit-transition: all .5s ease;
 			-moz-transition: all .5s ease;
 			-o-transition: all .5s ease;
 			letter-spacing: 0.1em;
-			overflow: hidden;
+/*			overflow: hidden;*/
 }
 					header .top_menu a:after {
 					    content: '';
@@ -598,7 +586,7 @@ header .order {
 		background-image: -webkit-linear-gradient(270deg, #33A4FC, #0086ED);
 		background-image: linear-gradient(180deg, #33A4FC, #0086ED);
 		min-width: 70px;
-		max-width: 200px;
+		max-width: 160px;
 		width: 100%;
 		text-align: center;
 		border-radius: 4px;
@@ -699,10 +687,7 @@ header .order {
 
 .services.on {
 	min-height: 600px;
-	height: calc(100vh - 200px);
 	visibility: visible;
-
-
 }
 .services.off {
 	min-height: 0px;
@@ -735,7 +720,7 @@ header .order {
 		    height: 100%;
 		    z-index: 0;
 		    background-size: cover;  
-		    background-position: 73% center;
+		    background-position: center 30%;
 		    background-repeat: no-repeat;    
 		    -webkit-transition: scale .1s, margin .0s;    
 		            transition: scale .1s, margin .0s;
@@ -837,6 +822,7 @@ header .order {
 						}
 
 								.services .menu ul li a {
+									cursor: pointer;
 								    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
 								    display: block;
 								    border: 1px solid rgba(255, 255, 255, 0.57);
@@ -2957,3 +2943,5 @@ section.newsart section {
 	opacity: 1;
 	cursor: pointer;
 }
+
+

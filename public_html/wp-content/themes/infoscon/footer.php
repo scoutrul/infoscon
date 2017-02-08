@@ -49,9 +49,9 @@
 				<div class="roskomnadzor"><img src="<?php bloginfo('template_url'); ?>/images/roskomnadzor.png" title="Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций"></div>
 			</div>
 			<div>
-				<div>© Компания "Инфо-Связь Консалтинг" 2008-2017г, лицензирование услуг связи.</div>
+				<div>© Сайт компании "Инфо-Связь Консалтинг" (2008-2017г), лицензирование услуг связи.</div>
 				<div>
-					<a href="http://infoscon.ru/sitemap/">Карта сайта</a> / <a href="http://infoscon.ru/license-pro.ru/" target="_blank">Old ver.</a>
+					/ <a href="http://infoscon.ru/sitemap/">Карта сайта</a> 
 				</div>
 			</div>
 

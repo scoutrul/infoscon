@@ -1,4 +1,4 @@
-<ol class="features_footer">
+<ol class="features_footer" id="scroll-flag">
     <div class="slogan">С нами всегда удобно!</div>
     <li>
         <svg fill="#000000" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg">

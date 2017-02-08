@@ -1,14 +1,14 @@
-			<section class="services on" id="scroll-flag">
+			<section class="services on" >
 			
 				<div class="container">
 					<div class="menu">
-					<div class="header">Наши услуги <a href="/uslugi/" class="all">Все</a></div>
+					<div class="header">Наши услуги / <a href="/price/" class="all">Цены</a></div>
 						<ul>
-							<li id="service1"><a href="#">Лицензии на услуги связи</a></li>
-							<li id="service2"><a href="#">Лицензии на вещание</a></li>
-							<li id="service3"><a href="#">Регистрация СМИ</a></li>
-							<li id="service4"><a href="#">Продление и переоформление</a></li>
-							<li id="service5"><a href="#">Разрешения на частоты</a></li>
+							<li id="service1"><a>Лицензии на услуги связи</a></li>
+							<li id="service2"><a>Лицензии на вещание</a></li>
+							<li id="service3"><a>Регистрация СМИ</a></li>
+							<li id="service4"><a>Продление и переоформление</a></li>
+							<li id="service5"><a>Разрешения на частоты</a></li>
 						</ul>	
 					</div>
 
