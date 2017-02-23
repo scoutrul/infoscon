@@ -28,8 +28,7 @@
 		    </div>	
 			<div class="logo">
 				<img src="<?php bloginfo('template_url'); ?>/images/logo_infosvyaz_ru.png" alt="Компания ИнфоСвязь Консалтинг" class="gohome"><br>
-				<img src="<?php bloginfo('template_url'); ?>/images/logo-slogan.png" alt="Связисты для связистов" class="gohome"><br>
-
+				<img src="<?php bloginfo('template_url'); ?>/images/logo-slogan.png" alt="Связисты для связистов" class="gohome">
 			</div>
 
 			<ul class="poduslugi">
@@ -42,8 +41,14 @@
 			<?php wp_nav_menu('menu=top_menu&menu_class=top_menu&container=&'); ?>
 
 
-			<div style="margin-right:-4px;">
-				<img src="<?php bloginfo('template_url'); ?>/images/header_phone.png"><br>			
+			<div class="info">
+				<div class="v"><img src="<?php bloginfo('template_url'); ?>/images/viber.png">Viber</div>
+				<div class="w"><img src="<?php bloginfo('template_url'); ?>/images/whatsup.png">WhatsUp</div>
+				<div class="num">+7 916 594-9208</div>
+				<div class="mail"><a href="mailto:info@infoscon.ru">info@infoscon.ru</a></div>
+			</div>
+			<div class="contacts">
+				<div class="phone">8-800-550-1089 <sub>(бесплатный звонок для РФ)</sub></div>		
 				<a class="order" id="freeCons">Узнать свою скидку</a>
 			</div>
 		</section>

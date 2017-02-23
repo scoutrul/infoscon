@@ -1,4 +1,4 @@
-﻿	/* delite after  30/02 */
+	/* delite after  30/02 */
 
 	@media only screen and (max-width: 600px){
 		#feedback_me {
@@ -109,7 +109,11 @@
 		font-style: italic;
 	}
 
-
+	blockquote h1,
+	blockquote h2,
+	blockquote h3 {
+		padding: 0
+	}
 
 	blockquote > * {
 		padding:0;
@@ -296,6 +300,7 @@
     background: url(images/body_noise.png) repeat;
     min-height: calc(100vh - 374px);
     overflow: hidden;
+    padding-top: 80px;
 }
 
 		.main:after {
@@ -310,7 +315,7 @@
 
 header {
 	background-color: #191817;
-	max-height: 85px;  
+	max-height: 95px;  
 	width: 100%;
 	transition: all .1s ease;
 	-webkit-transition: all .1s ease;
@@ -319,6 +324,7 @@ header {
 	background-image: url(images/raster.png);
 	background-repeat: no-repeat;
 	z-index: 1001;
+	    position: fixed;
 }
 
 		header .header {
@@ -334,7 +340,7 @@ header {
 			        flex-direction: row;
 			-webkit-flex-direction: row;
 			margin: auto;
-			padding: 0 30px;
+			padding: 10px 0;
 			z-index: 0;
 			align-items: center;
 }
@@ -344,6 +350,7 @@ header {
 			z-index: 10;
 			cursor: pointer;
 			text-align: center;
+			    margin-top: -8px;
 }	
 					header .logo img {
 					}
@@ -407,6 +414,7 @@ header .poduslugi {
     padding: 30px !important;
         border: 0px solid #ccc;
     border-bottom-width: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
 }
 header .poduslugi li {
 	margin:0;
@@ -428,6 +436,46 @@ header .poduslugi a {
 }
 
 
+header .info {
+	position: absolute;
+	top: 10px;
+	right: 200px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 10px;
+}
+header .info .v,
+header .info .w {}
+header .info .v img,
+header .info .w img {
+	width: 13px;
+	margin: 0 5px;
+	opacity: .8;
+}
+header .info .num {
+	margin: 0 10px 0 5px;
+}
+header .info .mail a{
+	color:#fff;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+header .phone {
+	font-size: 20px;
+	padding: 0 0 5px;
+	white-space: nowrap;
+	font-family: 'Roboto Slab', serif;
+}
+
+header .phone sub {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	font-size: 8px;
+	color: #9a9a9a;
+}
 /* ................................. */
 
 @-webkit-keyframes menuUslugi_a {
@@ -578,7 +626,7 @@ header .order {
 		overflow: hidden;
 		display: block;
 		text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-		margin: 15px 5px 0 auto;
+		/*margin: 15px 5px 0 auto;*/
 		color: #FFF;
 		line-height: 15px;
 		padding: 5px 10px;
@@ -2019,6 +2067,14 @@ form label {
 }
 
 .contactForm .orderclose {
+    color: #827773;
+    cursor: pointer;
+    padding: 30px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+}
+.contactForm .orderclose.plus {
 
 	color: #FF4900;
 	cursor: pointer;

@@ -2,7 +2,7 @@
 	<div id="contactForm" class="contactForm">
 		<form action="#">
 			<div>
-				<div class="orderclose">+</div>
+				<div class="orderclose plus">+</div>
 				<div class="contactform-label">Сообщение</div>
 				<label>Представьтесь:
 					<input type="text" placeholder="Ваше имя" id="form_name">
@@ -12,6 +12,7 @@
 				</label>
 				<textarea name="text" cols="30" rows="10" placeholder="Что Вас интересует?" id="form_text"></textarea>
 				<button class="send_mail">Отправить</button>
+				<div class="orderclose">Отмена</div>
 			</div>
 		</form>
 	</div>
@@ -20,7 +21,7 @@
 	<!-- order form -->
 	<div id="PostOrderForm" class="contactForm">
 		<form action="#">
-			<div class="orderclose">+</div>
+			<div class="orderclose plus">+</div>
 			<div class="h1">Сделать заказ:</div>
 			<label>Представьтесь:
 				<input type="text" placeholder="Ваше имя" name="name" id="form_name_order">
@@ -30,6 +31,8 @@
 			</label>
 			<textarea name="" cols="30" rows="6" placeholder="Что Вас интересует?" name="text" id="form_text_order"></textarea>
 			<button class="send_order">Заказать</button>
+				<div class="orderclose">Отмена</div>
+
 		</form>
 	</div>
 	<!-- //order form -->
